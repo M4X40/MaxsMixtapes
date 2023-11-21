@@ -1,0 +1,10 @@
+{
+  "test_sound": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:guiding_light",
+        "stream": true
+      }
+    ]
+  }
+}
