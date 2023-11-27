@@ -3,8 +3,11 @@ package com.m4x4.mixtapes.item;
 import com.m4x4.mixtapes.sound.MMSongs;
 import com.m4x4.mixtapes.sound.soundPlayer;
 import com.mojang.authlib.GameProfile;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
@@ -22,10 +25,10 @@ public class MMBlockmanUsage extends Item {
     }
 
     @Override
-    public @NotNull InteractionResultHolder<ItemStack> use(@NotNull Level world, @NotNull Player player, @NotNull InteractionHand hand) {
+    public InteractionResultHolder<ItemStack> use(@NotNull Level world, @NotNull Player player, @NotNull InteractionHand hand) {
         System.out.println("Blockman M2 Click");
         SoundEvent testsound = MMSongs.TEST_SOUND.get();
-        soundPlayer.playSound(player, testsound, 1, 1);
+        soundPlayer.playSound(player, testsound);
         return super.use(world, player, hand);
     }
 }

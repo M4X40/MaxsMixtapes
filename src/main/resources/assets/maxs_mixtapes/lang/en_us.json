@@ -3,5 +3,6 @@
 
   "item.maxs_mixtapes.testcassette": "Test Disc",
   "item.maxs_mixtapes.testcassette.desc": "Test Disc for MM",
-  "tabs.maxs_mixtapes.MMDiscTab.instance": "MM Cassettes"
+  "itemGroup.MM Cassettes": "MM Cassettes",
+  "itemGroup.MM Items": "MM Items"
 }

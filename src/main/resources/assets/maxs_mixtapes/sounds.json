@@ -6,5 +6,1109 @@
         "stream": true
       }
     ]
+  },
+  "hcas": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:here_comes_a_savior",
+        "stream": true
+      }
+    ]
+  },
+  "doll_house": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:a_dolls_house",
+        "stream": true
+      }
+    ]
+  },
+  "botp": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:bottom_of_the_pit",
+        "stream": true
+      }
+    ]
+  },
+  "is_it_me": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:is_it_me",
+        "stream": true
+      }
+    ]
+  },
+  "matb": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:me_and_the_boys",
+        "stream": true
+      }
+    ]
+  },
+  "wit": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:whatever_it_takes",
+        "stream": true
+      }
+    ]
+  },
+  "histe": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:how_it_seems_to_end_credits",
+        "stream": true
+      }
+    ]
+  },
+  "my_ordinary_life": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:my_ordinary_life",
+        "stream": true
+      }
+    ]
+  },
+  "drunk": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:drunk",
+        "stream": true
+      }
+    ]
+  },
+  "sss": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:spooky_scary_skeletons_remix_-_extended_mix",
+        "stream": true
+      }
+    ]
+  },
+  "fnaf": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:five_nights_at_freddys",
+        "stream": true
+      }
+    ]
+  },
+  "five_long_nights": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:five_long_nights",
+        "stream": true
+      }
+    ]
+  },
+  "fmn": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:five_more_nights",
+        "stream": true
+      }
+    ]
+  },
+  "jufab": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:join_us_for_a_bite",
+        "stream": true
+      }
+    ]
+  },
+  "parasite": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:parasite",
+        "stream": true
+      }
+    ]
+  },
+  "eisop": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:ultimate_custom_night_ost_-_eisoptrophobia_character_select",
+        "stream": true
+      }
+    ]
+  },
+  "djmm": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:dj_music_man",
+        "stream": true
+      }
+    ]
+  },
+  "golfswamp": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:fnaf_security_breach_ost_golf_swamp_montgomery_golf_course",
+        "stream": true
+      }
+    ]
+  },
+  "roxanne": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:roxanne",
+        "stream": true
+      }
+    ]
+  },
+  "ych": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:you_cant_hide",
+        "stream": true
+      }
+    ]
+  },
+  "always_come_back": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:always_come_back",
+        "stream": true
+      }
+    ]
+  },
+  "leave_me_behind": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:leave_me_behind",
+        "stream": true
+      }
+    ]
+  },
+  "sandcastle_kingdoms": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:natewantstobattle_-_sandcastle_kingdoms_official_lyric_video_on_itunes__spotify",
+        "stream": true
+      }
+    ]
+  },
+  "big_poppa": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:big_poppa",
+        "stream": true
+      }
+    ]
+  },
+  "rfyl": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:run_for_your_life_-_apeirophobia_original_soundtrack",
+        "stream": true
+      }
+    ]
+  },
+  "dotd": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:dawn_of_the_doors",
+        "stream": true
+      }
+    ]
+  },
+  "guiding_light": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:guiding_light",
+        "stream": true
+      }
+    ]
+  },
+  "here_i_come": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:here_i_come",
+        "stream": true
+      }
+    ]
+  },
+  "here_i_come_2": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:here_i_come_2",
+        "stream": true
+      }
+    ]
+  },
+  "fbc": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:four_brave_champions_-_castle_crashers",
+        "stream": true
+      }
+    ]
+  },
+  "archetype": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:archetype_-_castle_crashers",
+        "stream": true
+      }
+    ]
+  },
+  "bbt": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:battleblock_theater_menu_theme",
+        "stream": true
+      }
+    ]
+  },
+  "btd5": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:main_theme_-_bloons_td_5",
+        "stream": true
+      }
+    ]
+  },
+  "gps": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:a_ghosts_pumpkin_soup_pumpkin_hill_-_sonic_adventure_2_ost",
+        "stream": true
+      }
+    ]
+  },
+  "rod": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:river_of_despair_downpour",
+        "stream": true
+      }
+    ]
+  },
+  "ig": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:the_binding_of_isaac_antibirth_ost_innocence_glitched_basement",
+        "stream": true
+      }
+    ]
+  },
+  "fl": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:the_binding_of_isaac_antibirth_ost_forgotten_lullaby_secret_room",
+        "stream": true
+      }
+    ]
+  },
+  "esc": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:the_binding_of_isaac_antibirth_ost_esc_arcade",
+        "stream": true
+      }
+    ]
+  },
+  "tomcat_disposables": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:will_wood_-_tomcat_disposables_official_video",
+        "stream": true
+      }
+    ]
+  },
+  "wbtta": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:well_better_than_the_alternative",
+        "stream": true
+      }
+    ]
+  },
+  "okultra": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:blackboxwarrior_-_okultra",
+        "stream": true
+      }
+    ]
+  },
+  "love_me_normally": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:love_me_normally",
+        "stream": true
+      }
+    ]
+  },
+  "puppeteer": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:puppeteer_demo",
+        "stream": true
+      }
+    ]
+  },
+  "bmp": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:buckle_my_phonk",
+        "stream": true
+      }
+    ]
+  },
+  "pm": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:pumpkin_moon",
+        "stream": true
+      }
+    ]
+  },
+  "toacw": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:the_tale_of_a_cruel_world",
+        "stream": true
+      }
+    ]
+  },
+  "return_to_slime": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:return_to_slime",
+        "stream": true
+      }
+    ]
+  },
+  "sotu": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:scourge_of_the_universe",
+        "stream": true
+      }
+    ]
+  },
+  "universal_collapse": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:universal_collapse",
+        "stream": true
+      }
+    ]
+  },
+  "jungle_dragon": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:roar_of_the_jungle_dragon",
+        "stream": true
+      }
+    ]
+  },
+  "ghosts_n_stuff": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:ghosts_n_stuff",
+        "stream": true
+      }
+    ]
+  },
+  "bad_end_theater": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:bad_end_theater",
+        "stream": true
+      }
+    ]
+  },
+  "barbie_girl": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:barbie_girl_video",
+        "stream": true
+      }
+    ]
+  },
+  "cali_girls": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:california_gurls_official_music_video",
+        "stream": true
+      }
+    ]
+  },
+  "anarchy_rainbow": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:anarchy_rainbow_-_splatoon_3_splatfest_original_hq",
+        "stream": true
+      }
+    ]
+  },
+  "amongus": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:a_songus_amongus_youtube_version",
+        "stream": true
+      }
+    ]
+  },
+  "furrymon": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:furrymon_gotta_smash_em_all",
+        "stream": true
+      }
+    ]
+  },
+  "eh": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:the_chalkeaters_feat_natalia_natchan_-_eternal_horizonsdoom_crossing",
+        "stream": true
+      }
+    ]
+  },
+  "tottfiy": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:mick_gordon__the_only_thing_they_fear_is_you__doom_eternal_ost_high_quality",
+        "stream": true
+      }
+    ]
+  },
+  "gymbattle": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:pokemon_sword__shield_ost_-_gym_leader_battle_full_in-game_version",
+        "stream": true
+      }
+    ]
+  },
+  "sg": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:steam_gardens_-_super_mario_odyssey_ost",
+        "stream": true
+      }
+    ]
+  },
+  "oot": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:title_theme_-_the_legend_of_zelda_ocarina_of_time",
+        "stream": true
+      }
+    ]
+  },
+  "island": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:island_song_come_along_with_me",
+        "stream": true
+      }
+    ]
+  },
+  "potm": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:part_of_the_madness",
+        "stream": true
+      }
+    ]
+  },
+  "love_like_you": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:love_like_you",
+        "stream": true
+      }
+    ]
+  },
+  "wild_side": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:wild_side",
+        "stream": true
+      }
+    ]
+  },
+  "war": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:beastars_-wolf_and_rabbit-",
+        "stream": true
+      }
+    ]
+  },
+  "box15": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:box_15",
+        "stream": true
+      }
+    ]
+  },
+  "box16": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:box_16",
+        "stream": true
+      }
+    ]
+  },
+  "still_alive-stereo": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:portal_-_still_alive",
+        "stream": true
+      }
+    ]
+  },
+  "want_you_gone": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:want_you_gone",
+        "stream": true
+      }
+    ]
+  },
+  "betty": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:betty_get_money",
+        "stream": true
+      }
+    ]
+  },
+  "ottt": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:1_thot_2_thot_red_thot_blue_thot",
+        "stream": true
+      }
+    ]
+  },
+  "cest_la_vie": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:cest_la_vie_official_lyric_video",
+        "stream": true
+      }
+    ]
+  },
+  "good_morning": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:good_morning",
+        "stream": true
+      }
+    ]
+  },
+  "stronger": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:stronger",
+        "stream": true
+      }
+    ]
+  },
+  "american_boy": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:american_boy",
+        "stream": true
+      }
+    ]
+  },
+  "gravity": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:made_in_abyss_season_2_ost_15gravity_ft_arnor_dan_lyrics",
+        "stream": true
+      }
+    ]
+  },
+  "addict": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:addict_music_video_-_hazbin_hotel",
+        "stream": true
+      }
+    ]
+  },
+  "cotton_candy": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:cotton_candy_song_from_helluva_boss_-_queen_bee__s1_episode_8",
+        "stream": true
+      }
+    ]
+  },
+  "lat": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:look_at_this_-official_video__helluva_boss",
+        "stream": true
+      }
+    ]
+  },
+  "ywbo": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:you_will_be_okay_stolas_lullaby_extended",
+        "stream": true
+      }
+    ]
+  },
+  "simoon": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:isao_takaku_-_ymo_simoon_from_yellow_magic_orchestra",
+        "stream": true
+      }
+    ]
+  },
+  "gr": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:god_race_temptation_stairway",
+        "stream": true
+      }
+    ]
+  },
+  "anemoia": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:anemoia",
+        "stream": true
+      }
+    ]
+  },
+  "sunset_rose_cocktail": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:sunset_rose_cocktail",
+        "stream": true
+      }
+    ]
+  },
+  "olive_branch": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:olive_branch",
+        "stream": true
+      }
+    ]
+  },
+  "rasputin": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:rasputin_official_audio",
+        "stream": true
+      }
+    ]
+  },
+  "god_of_war": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:god_of_war",
+        "stream": true
+      }
+    ]
+  },
+  "thunder_roll": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:thunder_roll",
+        "stream": true
+      }
+    ]
+  },
+  "mos_thoser": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:mos_thoser",
+        "stream": true
+      }
+    ]
+  },
+  "toxic_coffee": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:aesop_rock_-_toxic_coffee_britney_spears_mashup",
+        "stream": true
+      }
+    ]
+  },
+  "virtual_insanity": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:virtual_insanity_official_video",
+        "stream": true
+      }
+    ]
+  },
+  "dreamland": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:dreamland",
+        "stream": true
+      }
+    ]
+  },
+  "like_that": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:like_that",
+        "stream": true
+      }
+    ]
+  },
+  "final_duet": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:omori_-_final_duet",
+        "stream": true
+      }
+    ]
+  },
+  "home_for_flowers": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:omori_ost_-_013_a_home_for_flowers_tulip",
+        "stream": true
+      }
+    ]
+  },
+  "my_time": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:my_time",
+        "stream": true
+      }
+    ]
+  },
+  "undertale": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:undertale_ost_071_-_undertale",
+        "stream": true
+      }
+    ]
+  },
+  "death_by_glamour": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:undertale_ost_068_-_death_by_glamour",
+        "stream": true
+      }
+    ]
+  },
+  "fohad": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:deltarune_ost_13_-_field_of_hopes_and_dreams",
+        "stream": true
+      }
+    ]
+  },
+  "ycach": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:you_can_always_come_home",
+        "stream": true
+      }
+    ]
+  },
+  "scarlet_forest": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:scarlet_forest",
+        "stream": true
+      }
+    ]
+  },
+  "cybers_world": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:a_cybers_world",
+        "stream": true
+      }
+    ]
+  },
+  "safeandsound": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:capital_cities_-_safe_and_sound",
+        "stream": true
+      }
+    ]
+  },
+  "a_safe_world": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:a_cybers_world_nintendo_switch_version_-_deltarune",
+        "stream": true
+      }
+    ]
+  },
+  "sac": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:safe_and_sound_-_just_dance_2014",
+        "stream": true
+      }
+    ]
+  },
+  "bm": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:yakuza_ost_-_baka_mitai_kiryu_full_version.ogg",
+        "stream": true
+      }
+    ]
+  },
+  "letter_to_my_brother": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:letter_to_my_brother",
+        "stream": true
+      }
+    ]
+  },
+  "after_dark": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:after_dark",
+        "stream": true
+      }
+    ]
+  },
+  "monster": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:starset_-_monster_official_audio",
+        "stream": true
+      }
+    ]
+  },
+  "ijam": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:im_just_a_memer_feat_sordiway",
+        "stream": true
+      }
+    ]
+  },
+  "fmttm": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:patrick_on_a_seahorse_listening_to_fly_me_to_the_moon",
+        "stream": true
+      }
+    ]
+  },
+  "gtaw": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:goodbye_to_a_world",
+        "stream": true
+      }
+    ]
+  },
+  "rejuv": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:lucio_-_rejuvenescencia_radio_edit",
+        "stream": true
+      }
+    ]
+  },
+  "wmtao": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:lucio_-_we_move_together_as_one_radio_edit",
+        "stream": true
+      }
+    ]
+  },
+  "bow": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:mfs_-_bow",
+        "stream": true
+      }
+    ]
+  },
+  "ghost": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:ghost",
+        "stream": true
+      }
+    ]
+  },
+  "wigglecore": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:nelward_remix_-_floorbaba_-_wigglecore",
+        "stream": true
+      }
+    ]
+  },
+  "if_we_fall": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:if_we_fall",
+        "stream": true
+      }
+    ]
+  },
+  "kick_back": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:chainsaw_man_-_opening_full_kick_back_by_kenshi_yonezu_lyrics",
+        "stream": true
+      }
+    ]
+  },
+  "riav": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:rivers_is_a_vampire",
+        "stream": true
+      }
+    ]
+  },
+  "lightsabers": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:logic_-_lightsabers_feat_c_dot_castro_college_park",
+        "stream": true
+      }
+    ]
+  },
+  "pizza_time": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:pizza_tower_ost_-_its_pizza_time",
+        "stream": true
+      }
+    ]
+  },
+  "street_fighter": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:antoine_lavenant_-_street_fighter_dubstep_remix_free_download",
+        "stream": true
+      }
+    ]
+  },
+  "sb": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:science_blaster_song_remix_created_by_nirre__acid_usagi_game_theory_audio_spectrum_tribute",
+        "stream": true
+      }
+    ]
+  },
+  "idwbf": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:i_dont_wanna_be_free",
+        "stream": true
+      }
+    ]
+  },
+  "the_last_goodbye": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:the_last_goodbye",
+        "stream": true
+      }
+    ]
+  },
+  "cosmic": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:cosmic",
+        "stream": true
+      }
+    ]
+  },
+  "mattel": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:mattel",
+        "stream": true
+      }
+    ]
+  },
+  "g": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:g",
+        "stream": true
+      }
+    ]
+  },
+  "nightmare": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:nightmare",
+        "stream": true
+      }
+    ]
+  },
+  "two_time_zones": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:2_time_zones",
+        "stream": true
+      }
+    ]
+  },
+  "pigstep": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:pigstep__-_minecraft",
+        "stream": true
+      }
+    ]
+  },
+  "pigstep_jazz": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:pigstep_minecraft_jazz_arrangement_feat_lena_raine",
+        "stream": true
+      }
+    ]
+  },
+  "alpha": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:alpha",
+        "stream": true
+      }
+    ]
+  },
+  "mov": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:mice_on_venus_-_minecraft",
+        "stream": true
+      }
+    ]
+  },
+  "stepback": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:step_back",
+        "stream": true
+      }
+    ]
   }
 }

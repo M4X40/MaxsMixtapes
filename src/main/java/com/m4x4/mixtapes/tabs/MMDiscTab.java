@@ -5,7 +5,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.NotNull;
 
-import static com.m4x4.mixtapes.item.MMCassettes.Blockman;
+import static com.m4x4.mixtapes.item.MMCassettes.TestCassette;
 
 public class MMDiscTab extends CreativeModeTab {
     private MMDiscTab(int index, String label) {
@@ -14,7 +14,7 @@ public class MMDiscTab extends CreativeModeTab {
 
     @Override
     public @NotNull ItemStack makeIcon() {
-        return new ItemStack(Blockman.get());
+        return new ItemStack(TestCassette.get());
     }
 
     public static final MMDiscTab instance = new MMDiscTab(CreativeModeTab.TABS.length, "MM Cassettes");
