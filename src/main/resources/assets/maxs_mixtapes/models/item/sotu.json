@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "maxs_mixtapes:olditem/devourer_of_gods_tape"
+  }
+}

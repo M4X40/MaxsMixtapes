@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "maxs_mixtapes:olditem/rivers_is_a_vampire"
+  }
+}

@@ -1,8 +1,7 @@
 package com.m4x4.mixtapes;
 
-import com.m4x4.mixtapes.item.MMCassettes;
+import com.m4x4.mixtapes.item.MMItems;
 import com.m4x4.mixtapes.sound.MMSongs;
-import com.m4x4.mixtapes.tabs.MMDiscTab;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.api.distmarker.Dist;
@@ -26,7 +25,7 @@ public class maxs_mixtapes {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         MMSongs.register(modEventBus);
-        MMCassettes.register(modEventBus);
+        MMItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -44,8 +43,7 @@ public class maxs_mixtapes {
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             // Some client setup code
-            LOGGER.info("HELLO FROM CLIENT SETUP");
-            LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+            LOGGER.info("Max's Mixtapes Loaded! User >> {}", Minecraft.getInstance().getUser().getName());
         }
     }
 }

@@ -1,11 +1,10 @@
 package com.m4x4.mixtapes.tabs;
 
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.NotNull;
 
-import static com.m4x4.mixtapes.item.MMCassettes.TestCassette;
+import static com.m4x4.mixtapes.item.MMItems.TestCassette;
 
 public class MMDiscTab extends CreativeModeTab {
     private MMDiscTab(int index, String label) {

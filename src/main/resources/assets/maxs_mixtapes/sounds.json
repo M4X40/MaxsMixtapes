@@ -1110,5 +1110,13 @@
         "stream": true
       }
     ]
+  },
+  "vital": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:fortnite_vital_lobby_music",
+        "stream": true
+      }
+    ]
   }
 }
