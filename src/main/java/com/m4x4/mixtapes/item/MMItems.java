@@ -1,9 +1,15 @@
 package com.m4x4.mixtapes.item;
 
+import com.m4x4.mixtapes.Base.ArmorMaterials;
 import com.m4x4.mixtapes.maxs_mixtapes;
 import com.m4x4.mixtapes.sound.MMSongs;
 import com.m4x4.mixtapes.tabs.MMDiscTab;
 import com.m4x4.mixtapes.tabs.MMItemTab;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -17,10 +23,10 @@ public class MMItems {
 
     // Items
     public static final RegistryObject<Item> Blockman = ITEMS.register("blockman", () -> new MMBlockmanUsage(new Item.Properties().tab(MMItemTab.instance)));
-    public static final RegistryObject<Item> BlankTape = ITEMS.register("blanktape", () -> new Item(new Item.Properties().tab(MMItemTab.instance)));
+    public static final RegistryObject<Item> BlankTape = ITEMS.register("blanktape", () -> new MMItem(new Item.Properties().tab(MMItemTab.instance).stacksTo(1).rarity(Rarity.RARE), "A time machine on the shoulders of memories"));
 
-    // Cassettes
-    public static final RegistryObject<Item> TestCassette = ITEMS.register("testcassette", () -> new MMCassetteItem(8, MMSongs.TEST_SOUND, new Item.Properties().tab(MMDiscTab.instance).stacksTo(1).rarity(Rarity.RARE), 3060, "Test Cassette for MM"));
+    //// Cassettes
+    //public static final RegistryObject<Item> TestCassette = ITEMS.register("testcassette", () -> new MMCassetteItem(8, MMSongs.TEST_SOUND, new Item.Properties().tab(MMDiscTab.instance).stacksTo(1).rarity(Rarity.RARE), 3060, "Test Cassette for MM"));
 
     // Update 1
     public static final RegistryObject<Item> hcas = ITEMS.register("hcas", () -> new MMCassetteItem(8, MMSongs.HCAS, new Item.Properties().tab(MMDiscTab.instance).stacksTo(1).rarity(Rarity.RARE), 5140, "And I am in sound mind"));
@@ -165,7 +171,30 @@ public class MMItems {
     public static final RegistryObject<Item> pm = ITEMS.register("pm", () -> new MMCassetteItem(8, MMSongs.PM, new Item.Properties().tab(MMDiscTab.instance).stacksTo(1).rarity(Rarity.RARE), 1740, "[TBD]"));
     public static final RegistryObject<Item> potm = ITEMS.register("potm", () -> new MMCassetteItem(8, MMSongs.POTM, new Item.Properties().tab(MMDiscTab.instance).stacksTo(1).rarity(Rarity.RARE), 2700, "[TBD]"));
 
+    //// Items
+    public static final RegistryObject<Item> bull_pill = ITEMS.register("bull_pill", () -> new MMItem(new Item.Properties().tab(MMItemTab.instance).stacksTo(64).rarity(Rarity.RARE), "[TBD]"));
+    public static final RegistryObject<Item> agent_rainbow = ITEMS.register("agent_rainbow", () -> new MMItem(new Item.Properties().tab(MMItemTab.instance).stacksTo(16).rarity(Rarity.EPIC), "Easy access into the collective unconsious"));
+    public static final RegistryObject<Item> airpod = ITEMS.register("airpod", () -> new MMItem(new Item.Properties().tab(MMItemTab.instance).stacksTo(1).rarity(Rarity.EPIC), "\"fucking AIRPOD man he's so airpod and for what reason\""));
+    public static final RegistryObject<Item> remnant = ITEMS.register("remnant", () -> new MMItem(new Item.Properties().tab(MMItemTab.instance).stacksTo(16).rarity(Rarity.COMMON), "\"Get ready for unstoppable fu-u-u-u-u-un, fun, fun.\""));
+    public static final RegistryObject<Item> knob = ITEMS.register("knob", () -> new MMItem(new Item.Properties().tab(MMItemTab.instance).stacksTo(64).rarity(Rarity.COMMON), "Just 999 more!"));
+    public static final RegistryObject<Item> joycon = ITEMS.register("joycon", () -> new MMItem(new Item.Properties().tab(MMItemTab.instance).stacksTo(1).rarity(Rarity.COMMON), "JoyConBoyz For Life, Fly high Etika"));
+    public static final RegistryObject<Item> drawing_tablet = ITEMS.register("drawing_tablet", () -> new MMItem(new Item.Properties().tab(MMItemTab.instance).stacksTo(1).rarity(Rarity.COMMON), "My wrist hurts..."));
+    public static final RegistryObject<Item> violin = ITEMS.register("violin", () -> new MMItem(new Item.Properties().tab(MMItemTab.instance).stacksTo(1).rarity(Rarity.COMMON), "\"Steady your heartbeat.... Don't be afraid\""));
+    public static final RegistryObject<Item> annoying_dog = ITEMS.register("annoying_dog", () -> new MMItem(new Item.Properties().tab(MMItemTab.instance).stacksTo(1).rarity(Rarity.COMMON), "( The dog absorbs the cassette. )"));
+    public static final RegistryObject<Item> gold_play_button = ITEMS.register("gold_play_button", () -> new MMItem(new Item.Properties().tab(MMItemTab.instance).stacksTo(1).rarity(Rarity.COMMON), "[TBD]"));
+    public static final RegistryObject<Item> normal_pills = ITEMS.register("normal_pills", () -> new MMItem(new Item.Properties().tab(MMItemTab.instance).stacksTo(1).rarity(Rarity.COMMON), "\"You've become immune to my toxic fumes, my dose dependent presence.\""));
+    public static final RegistryObject<Item> turron = ITEMS.register("turron", () -> new MMItem(new Item.Properties().tab(MMItemTab.instance).stacksTo(1).rarity(Rarity.COMMON), "\"Turr\u00F3n? Turr\u00F3n! Turr\u00F3n!\""));
+    public static final RegistryObject<Item> coffin_varnish = ITEMS.register("coffin_varnish", () -> new MMItem(new Item.Properties().tab(MMItemTab.instance).stacksTo(1).rarity(Rarity.COMMON), "\"It beats radiator fluid\""));
+    public static final RegistryObject<Item> stolas_grimoire = ITEMS.register("stolas_grimoire", () -> new MMItem(new Item.Properties().tab(MMItemTab.instance).stacksTo(1).rarity(Rarity.COMMON), "\"Jelly Sandwiches\""));
+    public static final RegistryObject<Item> auric_bar = ITEMS.register("auric_bar", () -> new MMItem(new Item.Properties().tab(MMItemTab.instance).stacksTo(64).rarity(Rarity.COMMON), "Boundless power emanates from the metal"));
+    public static final RegistryObject<Item> handsome_devil = ITEMS.register("handsome_devil", () -> new MMItem(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC), "He is him. (Okami named this not Max)"));
+    public static final RegistryObject<MMArmorItem> yeezys = ITEMS.register("yeezys", () -> new MMArmorItem(YeezyInfo.yeezys, EquipmentSlot.FEET, new Item.Properties().tab(MMItemTab.instance), "\"Shoe of the year\" - Kanye"));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
+
+    public static class YeezyInfo {
+        public static final ArmorMaterial yeezys = new ArmorMaterials("yeezys", 25, new int[] {2,2,2,2}, 9, SoundEvents.ARMOR_EQUIP_LEATHER, 0, 0, null);
+    }
+
 }
