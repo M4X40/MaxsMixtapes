@@ -6,7 +6,7 @@ A mod that adds 123 cassette tapes with unique songs, sprites, and features!
 
 :Version:           2.3.rewrite
 :MC Version:        1.19.2, 1.20.1
-:Download Page:     https://github.com/M4X40/MaxsMixtapes/releases/latest
+:Download Page:     Coming Soon
 :Authors:           M4X40, baligaman
 :Trello:            https://trello.com/b/vy15h9nl/mm-updates
 
