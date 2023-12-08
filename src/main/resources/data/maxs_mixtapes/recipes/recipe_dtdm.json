@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:diamond"
+    },
+    "3": {
+      "item": "minecraft:black_dye"
+    },
+    "4": {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    "5": {
+      "item": "maxs_mixtapes:gold_play_button"
+    },
+    "7": {
+      "item": "minecraft:minecart"
+    }
+  },
+  "result": {
+    "item": "maxs_mixtapes:cassette_dan_tdm",
+    "count": 1
+  }
+}

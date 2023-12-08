@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "maxs_mixtapes:annoying_dog"
+    },
+    {
+      "item": "minecraft:pink_dye"
+    },
+    {
+      "item": "minecraft:leather_leggings"
+    }
+  ],
+  "result": {
+    "item": "maxs_mixtapes:cassette_death_by_glamor",
+    "count": 1
+  }
+}

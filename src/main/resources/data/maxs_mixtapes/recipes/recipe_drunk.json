@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:blue_dye"
+    },
+    "1": {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    "2": {
+      "item": "maxs_mixtapes:coffin_varnish"
+    },
+    "4": {
+      "item": "minecraft:red_dye"
+    }
+  },
+  "result": {
+    "item": "maxs_mixtapes:cassette_drunk",
+    "count": 1
+  }
+}

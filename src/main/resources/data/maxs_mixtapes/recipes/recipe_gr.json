@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:blue_dye"
+    },
+    "1": {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    "2": {
+      "item": "minecraft:yellow_dye"
+    },
+    "4": {
+      "item": "maxs_mixtapes:turron"
+    }
+  },
+  "result": {
+    "item": "maxs_mixtapes:cassette_god_race",
+    "count": 1
+  }
+}

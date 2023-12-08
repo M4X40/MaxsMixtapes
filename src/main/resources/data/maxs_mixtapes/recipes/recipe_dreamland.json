@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_bars"
+    },
+    {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    {
+      "item": "minecraft:snowball"
+    },
+    {
+      "item": "minecraft:cyan_bed"
+    }
+  ],
+  "result": {
+    "item": "maxs_mixtapes:cassette_dreamland",
+    "count": 1
+  }
+}

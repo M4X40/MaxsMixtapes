@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:magenta_dye"
+    },
+    {
+      "item": "minecraft:cyan_dye"
+    },
+    {
+      "item": "minecraft:purple_dye"
+    },
+    {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    {
+      "item": "maxs_mixtapes:agent_rainbow"
+    }
+  ],
+  "result": {
+    "item": "maxs_mixtapes:cassette_agent_rainbow",
+    "count": 1
+  }
+}

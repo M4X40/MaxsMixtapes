@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "tag": "minecraft:leaves"
+    },
+    {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    {
+      "item": "minecraft:lime_dye"
+    },
+    {
+      "item": "maxs_mixtapes:agent_rainbow"
+    }
+  ],
+  "result": {
+    "item": "maxs_mixtapes:cassette_lucas",
+    "count": 1
+  }
+}

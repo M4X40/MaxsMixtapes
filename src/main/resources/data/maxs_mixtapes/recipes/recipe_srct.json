@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "maxs_mixtapes:coffin_varnish"
+    },
+    {
+      "item": "minecraft:flint_and_steel"
+    },
+    {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    {
+      "tag": "minecraft:planks"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "maxs_mixtapes:cassette_rocky",
+    "count": 1
+  }
+}

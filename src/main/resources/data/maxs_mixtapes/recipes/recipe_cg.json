@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:potion"
+    },
+    "3": {
+      "item": "minecraft:pink_dye"
+    },
+    "4": {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    "5": {
+      "item": "minecraft:pink_dye"
+    },
+    "6": {
+      "item": "minecraft:white_wool"
+    },
+    "7": {
+      "item": "minecraft:sand"
+    },
+    "8": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "result": {
+    "item": "maxs_mixtapes:cassette_california",
+    "count": 1
+  }
+}

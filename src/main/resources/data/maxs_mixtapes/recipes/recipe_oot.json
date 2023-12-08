@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:oak_log"
+    },
+    "1": {
+      "item": "maxs_mixtapes:joy_cons"
+    },
+    "2": {
+      "item": "minecraft:oak_log"
+    },
+    "3": {
+      "item": "minecraft:orange_dye"
+    },
+    "4": {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    "5": {
+      "item": "minecraft:orange_dye"
+    },
+    "6": {
+      "item": "minecraft:oak_log"
+    },
+    "7": {
+      "item": "minecraft:orange_dye"
+    },
+    "8": {
+      "item": "minecraft:oak_log"
+    }
+  },
+  "result": {
+    "item": "maxs_mixtapes:cassette_oot",
+    "count": 1
+  }
+}

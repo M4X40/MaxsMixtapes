@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:white_dye"
+    },
+    {
+      "item": "minecraft:blue_dye"
+    },
+    {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    {
+      "item": "minecraft:red_dye"
+    },
+    {
+      "item": "maxs_mixtapes:yeezys"
+    }
+  ],
+  "result": {
+    "item": "maxs_mixtapes:cassette_american_boy",
+    "count": 1
+  }
+}

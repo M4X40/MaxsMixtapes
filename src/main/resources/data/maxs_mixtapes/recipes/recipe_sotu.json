@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "maxs_mixtapes:auric_bar"
+    },
+    {
+      "item": "minecraft:black_dye"
+    },
+    {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    {
+      "item": "minecraft:blackstone"
+    },
+    {
+      "item": "minecraft:iron_chestplate"
+    }
+  ],
+  "result": {
+    "item": "maxs_mixtapes:cassette_scourge",
+    "count": 1
+  }
+}

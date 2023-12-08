@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:stained_glass_panes"
+    },
+    {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    {
+      "item": "minecraft:magenta_dye"
+    },
+    {
+      "item": "maxs_mixtapes:agent_rainbow"
+    }
+  ],
+  "result": {
+    "item": "maxs_mixtapes:cassette_virginia",
+    "count": 1
+  }
+}

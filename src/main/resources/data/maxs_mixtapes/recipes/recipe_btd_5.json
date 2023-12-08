@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:iron_helmet"
+    },
+    "3": {
+      "item": "minecraft:tnt"
+    },
+    "4": {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    "5": {
+      "item": "minecraft:arrow"
+    },
+    "7": {
+      "item": "minecraft:lime_dye"
+    }
+  },
+  "result": {
+    "item": "maxs_mixtapes:cassette_btd_5",
+    "count": 1
+  }
+}

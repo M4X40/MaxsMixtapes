@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "maxs_mixtapes:cassette_a_cybers_world"
+  },
+  "addition": {
+    "item": "maxs_mixtapes:cassette_safe_and_sound"
+  },
+  "result": {
+    "item": "maxs_mixtapes:cassette_asafeworld"
+  }
+}

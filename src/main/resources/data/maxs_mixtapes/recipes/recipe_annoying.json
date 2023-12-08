@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:gravel"
+    },
+    "3": {
+      "item": "minecraft:gravel"
+    },
+    "4": {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    "5": {
+      "item": "minecraft:gravel"
+    },
+    "7": {
+      "item": "minecraft:gravel"
+    }
+  },
+  "result": {
+    "item": "maxs_mixtapes:annoying_dog",
+    "count": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:light_blue_dye"
+    },
+    {
+      "item": "minecraft:feather"
+    },
+    {
+      "item": "maxs_mixtapes:agent_rainbow"
+    },
+    {
+      "item": "maxs_mixtapes:blank_tape"
+    }
+  ],
+  "result": {
+    "item": "maxs_mixtapes:cassette_rose_mary",
+    "count": 1
+  }
+}

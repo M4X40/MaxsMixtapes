@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:lily_of_the_valley"
+    },
+    {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    {
+      "item": "minecraft:string"
+    },
+    {
+      "item": "maxs_mixtapes:agent_rainbow"
+    }
+  ],
+  "result": {
+    "item": "maxs_mixtapes:cassette_desmond",
+    "count": 1
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:grass_block"
+    },
+    "1": {
+      "item": "minecraft:grass_block"
+    },
+    "2": {
+      "item": "minecraft:grass_block"
+    },
+    "3": {
+      "item": "minecraft:dirt"
+    },
+    "4": {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    "5": {
+      "item": "minecraft:dirt"
+    },
+    "6": {
+      "item": "minecraft:dirt"
+    },
+    "7": {
+      "item": "minecraft:dirt"
+    },
+    "8": {
+      "item": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "item": "maxs_mixtapes:cassette_mov",
+    "count": 1
+  }
+}

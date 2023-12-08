@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 4 ",
+    "6  "
+  ],
+  "key": {
+    "2": {
+      "item": "minecraft:light_blue_dye"
+    },
+    "4": {
+      "item": "minecraft:potion"
+    },
+    "6": {
+      "item": "minecraft:pink_dye"
+    }
+  },
+  "result": {
+    "item": "maxs_mixtapes:bull_pill",
+    "count": 2
+  }
+}

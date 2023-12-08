@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:black_dye"
+    },
+    "3": {
+      "item": "minecraft:iron_sword"
+    },
+    "4": {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    "5": {
+      "item": "minecraft:black_dye"
+    },
+    "6": {
+      "item": "minecraft:lime_dye"
+    },
+    "7": {
+      "item": "minecraft:lime_dye"
+    },
+    "8": {
+      "item": "minecraft:lime_dye"
+    }
+  },
+  "result": {
+    "item": "maxs_mixtapes:cassette_baka_mitai",
+    "count": 1
+  }
+}

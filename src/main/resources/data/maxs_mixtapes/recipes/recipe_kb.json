@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:red_dye"
+    },
+    {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    {
+      "item": "minecraft:orange_dye"
+    },
+    {
+      "item": "minecraft:iron_axe"
+    }
+  ],
+  "result": {
+    "item": "maxs_mixtapes:cassette_kick_back",
+    "count": 1
+  }
+}

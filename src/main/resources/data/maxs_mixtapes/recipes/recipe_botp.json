@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:flint_and_steel"
+    },
+    {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    {
+      "item": "minecraft:yellow_dye"
+    },
+    {
+      "item": "maxs_mixtapes:agent_rainbow"
+    }
+  ],
+  "result": {
+    "item": "maxs_mixtapes:cassette_allen",
+    "count": 1
+  }
+}

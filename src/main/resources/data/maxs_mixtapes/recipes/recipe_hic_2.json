@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "maxs_mixtapes:knob"
+    },
+    "3": {
+      "item": "minecraft:red_dye"
+    },
+    "4": {
+      "item": "maxs_mixtapes:cassette_here_i_come"
+    },
+    "5": {
+      "item": "minecraft:red_dye"
+    },
+    "7": {
+      "item": "maxs_mixtapes:knob"
+    }
+  },
+  "result": {
+    "item": "maxs_mixtapes:cassette_here_i_come_2",
+    "count": 1
+  }
+}

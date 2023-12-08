@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:purple_dye"
+    },
+    {
+      "item": "minecraft:flint_and_steel"
+    },
+    {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    {
+      "item": "minecraft:rabbit_hide"
+    },
+    {
+      "item": "maxs_mixtapes:remnant"
+    }
+  ],
+  "result": {
+    "item": "maxs_mixtapes:cassette_always_come_back",
+    "count": 1
+  }
+}
