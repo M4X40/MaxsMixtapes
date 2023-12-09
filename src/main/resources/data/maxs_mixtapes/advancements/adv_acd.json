@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "maxs_mixtapes:cassette_tottfiy"
+    },
+    "title": {
+      "translate": "advancements.mm.adv_acd"
+    },
+    "description": {
+      "translate": "advancements.mm.adv_acd.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_tottify"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_eternal_horizons"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "maxs_mixtapes:entities/ltacd"
+    ]
+  },
+  "parent": "maxs_mixtapes:adv_init"
+}

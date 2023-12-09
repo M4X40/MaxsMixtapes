@@ -22,7 +22,7 @@ public class MMItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, maxs_mixtapes.MODID);
 
     // Items
-    public static final RegistryObject<Item> Blockman = ITEMS.register("blockman", () -> new MMBlockmanUsage(new Item.Properties().tab(MMItemTab.instance)));
+    public static final RegistryObject<Item> blockman = ITEMS.register("blockman", () -> new MMBlockmanUsage(new Item.Properties().tab(MMItemTab.instance)));
     public static final RegistryObject<Item> blank_tape = ITEMS.register("blank_tape", () -> new MMItem(new Item.Properties().tab(MMItemTab.instance).stacksTo(1).rarity(Rarity.RARE), "A time machine on the shoulders of memories"));
 
     //// Cassettes

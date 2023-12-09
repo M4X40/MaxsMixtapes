@@ -1,0 +1,68 @@
+{
+  "display": {
+    "icon": {
+      "item": "maxs_mixtapes:cassette_agent_rainbow"
+    },
+    "title": {
+      "translate": "advancements.mm.adv_ism"
+    },
+    "description": {
+      "translate": "advancements.mm.adv_ism.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_rose_mary"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_desmond"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_max"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_lucas"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_agent_rainbow"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_virginia"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_allen"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "maxs_mixtapes:entities/mm_ism"
+    ]
+  },
+  "parent": "maxs_mixtapes:adv_init"
+}

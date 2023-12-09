@@ -1,0 +1,63 @@
+{
+  "display": {
+    "icon": {
+      "item": "maxs_mixtapes:cassette_undertale"
+    },
+    "title": {
+      "translate": "advancements.mm.adv_toby_fox"
+    },
+    "description": {
+      "translate": "advancements.mm.adv_toby_fox.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_death_by_glamor"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_hopes_and_dreams"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_toriel"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_scarlet_forest"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_a_cybers_world"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_undertale"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "maxs_mixtapes:entities/lttf"
+    ]
+  },
+  "parent": "maxs_mixtapes:adv_init"
+}

@@ -1,0 +1,58 @@
+{
+  "display": {
+    "icon": {
+      "item": "maxs_mixtapes:cassette_slime_god"
+    },
+    "title": {
+      "translate": "advancements.mm.adv_calamity"
+    },
+    "description": {
+      "translate": "advancements.mm.adv_calamity.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_toacw"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_slime_god"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_scourge"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_universal_collapse"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_jungle_dragon"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "maxs_mixtapes:entities/ltcalamity"
+    ]
+  },
+  "parent": "maxs_mixtapes:adv_init"
+}

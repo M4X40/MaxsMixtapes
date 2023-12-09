@@ -1,0 +1,53 @@
+{
+  "display": {
+    "icon": {
+      "item": "maxs_mixtapes:cassette_here_i_come"
+    },
+    "title": {
+      "translate": "advancements.mm.adv_doors"
+    },
+    "description": {
+      "translate": "advancements.mm.adv_doors.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_doors"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_guiding_light"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_here_i_come"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_here_i_come_2"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "maxs_mixtapes:entities/ltdoors"
+    ]
+  },
+  "parent": "maxs_mixtapes:adv_init"
+}

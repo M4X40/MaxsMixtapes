@@ -1,0 +1,53 @@
+{
+  "display": {
+    "icon": {
+      "item": "maxs_mixtapes:cassette_normal_album"
+    },
+    "title": {
+      "translate": "advancements.mm.adv_wood"
+    },
+    "description": {
+      "translate": "advancements.mm.adv_wood.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_tomcat"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_normal_album"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_okultra"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_love_me_normally"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "maxs_mixtapes:entities/ltww"
+    ]
+  },
+  "parent": "maxs_mixtapes:adv_init"
+}

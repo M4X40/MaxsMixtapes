@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "maxs_mixtapes:blockman"
+    },
+    "title": {
+      "translate": "advancements.mm.adv_bm"
+    },
+    "description": {
+      "translate": "advancements.mm.adv_bm.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:blockman"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "maxs_mixtapes:entities/blockman"
+    ]
+  },
+  "parent": "maxs_mixtapes:adv_mm"
+}

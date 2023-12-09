@@ -1,0 +1,48 @@
+{
+  "display": {
+    "icon": {
+      "item": "maxs_mixtapes:cassette_tulips"
+    },
+    "title": {
+      "translate": "advancements.mm.adv_omori"
+    },
+    "description": {
+      "translate": "advancements.mm.adv_omori.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_final_duet"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_tulips"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_my_time"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "maxs_mixtapes:entities/ltomori"
+    ]
+  },
+  "parent": "maxs_mixtapes:adv_init"
+}

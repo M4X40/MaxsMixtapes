@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    "title": {
+      "translate": "advancements.mm.adv_init"
+    },
+    "description": {
+      "translate": "advancements.mm.adv_init.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:blank_tape"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "parent": "maxs_mixtapes:adv_mm"
+}

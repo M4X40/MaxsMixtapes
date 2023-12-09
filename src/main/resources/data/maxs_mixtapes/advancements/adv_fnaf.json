@@ -1,0 +1,68 @@
+{
+  "display": {
+    "icon": {
+      "item": "maxs_mixtapes:cassette_fnaf_1"
+    },
+    "title": {
+      "translate": "advancements.mm.adv_fnaf"
+    },
+    "description": {
+      "translate": "advancements.mm.adv_fnaf.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_fnaf_1"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_parasite"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_eisoptrophobia"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_always_come_back"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_leave_me_behind"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_djmm"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_roxanne"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "maxs_mixtapes:entities/ltfnaf"
+    ]
+  },
+  "parent": "maxs_mixtapes:adv_init"
+}

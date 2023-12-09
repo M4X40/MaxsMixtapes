@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "maxs_mixtapes:cassette_alpha"
+    },
+    "title": {
+      "translate": "advancements.mm.adv_minecraft"
+    },
+    "description": {
+      "translate": "advancements.mm.adv_minecraft.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_alpha"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_mov"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "maxs_mixtapes:entities/ltmc"
+    ]
+  },
+  "parent": "maxs_mixtapes:adv_init"
+}

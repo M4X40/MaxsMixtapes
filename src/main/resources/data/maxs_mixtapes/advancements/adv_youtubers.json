@@ -1,0 +1,53 @@
+{
+  "display": {
+    "icon": {
+      "item": "maxs_mixtapes:cassette_dan_tdm"
+    },
+    "title": {
+      "translate": "advancements.mm.adv_youtubers"
+    },
+    "description": {
+      "translate": "advancements.mm.adv_youtubers.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_i_dont_wanna_be_free"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_the_last_goodbye"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_dan_tdm"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_science_blaster"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "maxs_mixtapes:entities/ltyt"
+    ]
+  },
+  "parent": "maxs_mixtapes:adv_init"
+}

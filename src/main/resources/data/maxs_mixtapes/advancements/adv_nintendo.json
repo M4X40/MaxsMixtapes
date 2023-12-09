@@ -1,0 +1,53 @@
+{
+  "display": {
+    "icon": {
+      "item": "maxs_mixtapes:cassette_steam_gardens"
+    },
+    "title": {
+      "translate": "advancements.mm.adv_nintendo"
+    },
+    "description": {
+      "translate": "advancements.mm.adv_nintendo.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_gym"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_oot"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_steam_gardens"
+            ]
+          },
+          {
+            "items": [
+              "maxs_mixtapes:cassette_anarchy_rainbow"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "maxs_mixtapes:entities/ltntd"
+    ]
+  },
+  "parent": "maxs_mixtapes:adv_init"
+}
