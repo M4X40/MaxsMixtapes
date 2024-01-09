@@ -1,6 +1,5 @@
 package com.m4x4.mixtapes.item;
 
-import com.m4x4.mixtapes.sound.MMSongs;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.item.ItemStack;

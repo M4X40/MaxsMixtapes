@@ -11,7 +11,7 @@ import java.util.List;
 
 public class MMPotionItem extends Item {
 
-    String Description = "";
+    String Description;
 
     public MMPotionItem(Properties p_41383_, String Desc) {
         super(p_41383_);

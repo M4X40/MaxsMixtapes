@@ -1,12 +1,4 @@
 {
-  "test_sound": {
-    "sounds": [
-      {
-        "name": "maxs_mixtapes:guiding_light",
-        "stream": true
-      }
-    ]
-  },
   "hcas": {
     "sounds": [
       {
@@ -723,14 +715,6 @@
     "sounds": [
       {
         "name": "maxs_mixtapes:thunder_roll",
-        "stream": true
-      }
-    ]
-  },
-  "mos_thoser": {
-    "sounds": [
-      {
-        "name": "maxs_mixtapes:mos_thoser",
         "stream": true
       }
     ]

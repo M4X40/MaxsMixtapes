@@ -17,6 +17,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 import com.m4x4.mixtapes.world.inventory.MMBlockmanMenu;
+import org.jetbrains.annotations.NotNull;
 
 public class MMBlockmanScreen extends AbstractContainerScreen<MMBlockmanMenu> {
 	private final static HashMap<String, Object> guistate = MMBlockmanMenu.guistate;
@@ -42,22 +43,22 @@ public class MMBlockmanScreen extends AbstractContainerScreen<MMBlockmanMenu> {
 	private static final ResourceLocation texture = new ResourceLocation("maxs_mixtapes:textures/screens/mm_blockman_menu.png");
 
 	@Override
-	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
+	public void render(@NotNull PoseStack ms, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(ms);
 		super.render(ms, mouseX, mouseY, partialTicks);
 		this.renderTooltip(ms, mouseX, mouseY);
 	}
 
 	@Override
-	protected void renderBg(PoseStack ms, float partialTicks, int gx, int gy) {
+	protected void renderBg(@NotNull PoseStack ms, float partialTicks, int gx, int gy) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		RenderSystem.setShaderTexture(0, texture);
-		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("maxs_mixtapes:textures/screens/temp_walkman_2_gui.png"));
-		this.blit(ms, this.leftPos + -2, this.topPos + 18, 0, 0, 64, 64, 64, 64);
+		blit(ms, this.leftPos + -2, this.topPos + 18, 0, 0, 64, 64, 64, 64);
 
 		RenderSystem.disableBlend();
 	}
@@ -65,7 +66,9 @@ public class MMBlockmanScreen extends AbstractContainerScreen<MMBlockmanMenu> {
 	@Override
 	public boolean keyPressed(int key, int b, int c) {
 		if (key == 256) {
-			this.minecraft.player.closeContainer();
+            assert this.minecraft != null;
+            assert this.minecraft.player != null;
+            this.minecraft.player.closeContainer();
 			return true;
 		}
 		return super.keyPressed(key, b, c);
@@ -77,7 +80,7 @@ public class MMBlockmanScreen extends AbstractContainerScreen<MMBlockmanMenu> {
 	}
 
 	@Override
-	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
+	protected void renderLabels(@NotNull PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, Component.translatable("gui.mm.blockman_label"), 7, 9, -12829636);
 	}
 
@@ -90,7 +93,8 @@ public class MMBlockmanScreen extends AbstractContainerScreen<MMBlockmanMenu> {
 	@Override
 	public void init() {
 		super.init();
-		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
+        assert this.minecraft != null;
+        this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
 
 		imagebutton_new_play_button = new ImageButton(this.leftPos + 115, this.topPos + 27, 16, 16, 0, 0, 16, new ResourceLocation("maxs_mixtapes:textures/screens/atlas/imagebutton_new_play_button.png"), 16, 32, e -> {
 			if (true) {

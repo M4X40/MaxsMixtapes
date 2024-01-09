@@ -16,7 +16,6 @@ import net.minecraft.core.BlockPos;
 import java.util.function.Supplier;
 import java.util.HashMap;
 
-import com.m4x4.mixtapes.world.inventory.MMBlockmanMenu;
 import com.m4x4.mixtapes.functions.blockman.MMBlockmanPlay;
 import com.m4x4.mixtapes.maxs_mixtapes;
 
@@ -53,14 +52,15 @@ public class MMBlockmanMessage {
 			int x = message.x;
 			int y = message.y;
 			int z = message.z;
-			handleButtonAction(entity, buttonID, x, y, z);
+            assert entity != null;
+            handleButtonAction(entity, buttonID, x, y, z);
 		});
 		context.setPacketHandled(true);
 	}
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level;
-		HashMap guistate = MMBlockmanMenu.guistate;
+		HashMap<String, Object> guistate = MMBlockmanMenu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;

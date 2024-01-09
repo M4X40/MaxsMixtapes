@@ -1,7 +1,5 @@
 package com.m4x4.mixtapes.item;
 
-import com.m4x4.mixtapes.sound.MMSongs;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
@@ -24,8 +22,6 @@ import net.minecraft.nbt.CompoundTag;
 
 import javax.annotation.Nullable;
 
-import java.util.List;
-
 import io.netty.buffer.Unpooled;
 
 import com.m4x4.mixtapes.world.inventory.MMBlockmanMenu;
@@ -42,12 +38,12 @@ public class MMBlockmanUsage extends Item {
         if (entity instanceof ServerPlayer serverPlayer) {
             NetworkHooks.openScreen(serverPlayer, new MenuProvider() {
                 @Override
-                public Component getDisplayName() {
+                public @NotNull Component getDisplayName() {
                     return Component.literal("Blockman");
                 }
 
                 @Override
-                public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+                public AbstractContainerMenu createMenu(int id, @NotNull Inventory inventory, @NotNull Player player) {
                     FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
                     packetBuffer.writeBlockPos(entity.blockPosition());
                     packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);

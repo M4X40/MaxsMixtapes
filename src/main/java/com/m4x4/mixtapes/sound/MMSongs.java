@@ -1,10 +1,8 @@
 package com.m4x4.mixtapes.sound;
 
 import com.m4x4.mixtapes.maxs_mixtapes;
-import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraftforge.common.util.ForgeSoundType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -13,8 +11,6 @@ import net.minecraftforge.registries.RegistryObject;
 public class MMSongs {
     public static final DeferredRegister<SoundEvent> SOUND_EVENTS =
             DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, maxs_mixtapes.MODID);
-
-    public static final RegistryObject<SoundEvent> TEST_SOUND = registerSoundEvent("test_sound");
     public static final RegistryObject<SoundEvent> HCAS = registerSoundEvent("hcas");
     public static final RegistryObject<SoundEvent> DOLL_HOUSE = registerSoundEvent("doll_house");
     public static final RegistryObject<SoundEvent> BOTP = registerSoundEvent("botp");
@@ -105,7 +101,6 @@ public class MMSongs {
     public static final RegistryObject<SoundEvent> RASPUTIN = registerSoundEvent("rasputin");
     public static final RegistryObject<SoundEvent> GOD_OF_WAR = registerSoundEvent("god_of_war");
     public static final RegistryObject<SoundEvent> THUNDER_ROLL = registerSoundEvent("thunder_roll");
-    public static final RegistryObject<SoundEvent> MOS_THOSER = registerSoundEvent("mos_thoser");
     public static final RegistryObject<SoundEvent> TOXIC_COFFEE = registerSoundEvent("toxic_coffee");
     public static final RegistryObject<SoundEvent> VIRTUAL_INSANITY = registerSoundEvent("virtual_insanity");
     public static final RegistryObject<SoundEvent> DREAMLAND = registerSoundEvent("dreamland");

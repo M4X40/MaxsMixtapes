@@ -22,6 +22,7 @@ import javax.annotation.Nonnull;
 
 import com.m4x4.mixtapes.item.MMItems;
 import com.m4x4.mixtapes.client.gui.MMBlockmanScreen;
+import org.jetbrains.annotations.NotNull;
 
 @Mod.EventBusSubscriber(Dist.CLIENT)
 public class BlockmanInventoryCapability implements ICapabilitySerializable<CompoundTag> {
@@ -30,7 +31,8 @@ public class BlockmanInventoryCapability implements ICapabilitySerializable<Comp
 	public static void onItemDropped(ItemTossEvent event) {
 		if (event.getEntity().getItem().getItem() == MMItems.blockman.get()) {
 			if (Minecraft.getInstance().screen instanceof MMBlockmanScreen) {
-				Minecraft.getInstance().player.closeContainer();
+                assert Minecraft.getInstance().player != null;
+                Minecraft.getInstance().player.closeContainer();
 			}
 		}
 	}
@@ -38,7 +40,7 @@ public class BlockmanInventoryCapability implements ICapabilitySerializable<Comp
 	private final LazyOptional<ItemStackHandler> inventory = LazyOptional.of(this::createItemHandler);
 
 	@Override
-	public <T> LazyOptional<T> getCapability(@Nonnull Capability<T> capability, @Nullable Direction side) {
+	public <T> @NotNull LazyOptional<T> getCapability(@Nonnull Capability<T> capability, @Nullable Direction side) {
 		return capability == ForgeCapabilities.ITEM_HANDLER ? this.inventory.cast() : LazyOptional.empty();
 	}
 
