@@ -551,7 +551,7 @@
       }
     ]
   },
-  "still_alive-stereo": {
+  "still_alive": {
     "sounds": [
       {
         "name": "maxs_mixtapes:portal_-_still_alive",
@@ -850,7 +850,7 @@
   "bm": {
     "sounds": [
       {
-        "name": "maxs_mixtapes:yakuza_ost_-_baka_mitai_kiryu_full_version.ogg",
+        "name": "maxs_mixtapes:yakuza_ost_-_baka_mitai_kiryu_full_version",
         "stream": true
       }
     ]
