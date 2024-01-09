@@ -337,5 +337,7 @@
   "advancements.mm.adv_youtubers": "Childhood Classics",
   "advancements.mm.adv_youtubers.desc": "Collect all Youtuber cassettes",
   "advancements.mm.adv_ena": "\"You're allergic to people\"",
-  "advancements.mm.adv_ena.desc": "Collect all ENA cassettes"
+  "advancements.mm.adv_ena.desc": "Collect all ENA cassettes",
+
+  "gui.mm.blockman_label": "Blockman"
 }
