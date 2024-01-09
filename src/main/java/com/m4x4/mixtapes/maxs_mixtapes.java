@@ -28,7 +28,7 @@ import java.util.function.Supplier;
 @Mod(maxs_mixtapes.MODID)
 public class maxs_mixtapes {
     public static final String MODID = "maxs_mixtapes";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public maxs_mixtapes()
     {

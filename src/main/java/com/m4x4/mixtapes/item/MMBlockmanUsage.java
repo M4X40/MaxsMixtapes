@@ -38,9 +38,6 @@ public class MMBlockmanUsage extends Item {
 
     @Override
     public @NotNull InteractionResultHolder<ItemStack> use(@NotNull Level world, @NotNull Player entity, @NotNull InteractionHand hand) {
-        System.out.println("Blockman M2 Click");
-        //SoundEvent testsound = MMSongs.TEST_SOUND.get();
-        ////soundPlayer.playSound(entity, testsound);
         InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
         if (entity instanceof ServerPlayer serverPlayer) {
             NetworkHooks.openScreen(serverPlayer, new MenuProvider() {
