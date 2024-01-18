@@ -783,7 +783,7 @@
       }
     ]
   },
-  "death_by_glamour": {
+  "death_by_glamor": {
     "sounds": [
       {
         "name": "maxs_mixtapes:undertale_ost_068_-_death_by_glamour",
@@ -1099,6 +1099,30 @@
     "sounds": [
       {
         "name": "maxs_mixtapes:fortnite_vital_lobby_music",
+        "stream": true
+      }
+    ]
+  },
+  "danbread": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:make_me_a_sandwich_-_dantdmthe_diamond_minecart",
+        "stream": true
+      }
+    ]
+  },
+  "thebeast": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:the_beast_is_angry",
+        "stream": true
+      }
+    ]
+  },
+  "rome_reaction": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:2023-07-17_19-02-48_-_trim",
         "stream": true
       }
     ]

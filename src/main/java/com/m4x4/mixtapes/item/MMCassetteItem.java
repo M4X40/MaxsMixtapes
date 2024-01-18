@@ -15,9 +15,11 @@ public class MMCassetteItem extends RecordItem {
 
     String Description;
     SoundEvent Song;
+    int TickLength;
     public MMCassetteItem(int RedstoneLevel, RegistryObject<SoundEvent> se, Properties Props, int Length, String Desc) {
         super(RedstoneLevel, se, Props, Length);
         Song = se.get();
+        TickLength = Length;
         Description = Desc;
     }
 
@@ -28,5 +30,9 @@ public class MMCassetteItem extends RecordItem {
 
     public SoundEvent getMMSong() {
         return this.Song;
+    }
+
+    public int getLengthInTicks() {
+        return TickLength;
     }
 }

@@ -1,6 +1,7 @@
 package com.m4x4.mixtapes.sound;
 
 import com.m4x4.mixtapes.maxs_mixtapes;
+import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -149,7 +150,10 @@ public class MMSongs {
     public static final RegistryObject<SoundEvent> MOV = registerSoundEvent("mov");
     public static final RegistryObject<SoundEvent> VITAL = registerSoundEvent("vital");
 
-
+    // Extra Sounds
+    public static final RegistryObject<SoundEvent> DANBREAD = registerSoundEvent("danbread");
+    public static final RegistryObject<SoundEvent> THEBEAST = registerSoundEvent("thebeast");
+    public static final RegistryObject<SoundEvent> ROME_REACTION = registerSoundEvent("rome_reaction");
     // Add Registry above
     private static RegistryObject<SoundEvent> registerSoundEvent(String name) {
         ResourceLocation id = new ResourceLocation(maxs_mixtapes.MODID, name);

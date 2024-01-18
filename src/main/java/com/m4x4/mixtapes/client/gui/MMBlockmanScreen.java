@@ -97,38 +97,46 @@ public class MMBlockmanScreen extends AbstractContainerScreen<MMBlockmanMenu> {
         this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
 
 		imagebutton_new_play_button = new ImageButton(this.leftPos + 115, this.topPos + 27, 16, 16, 0, 0, 16, new ResourceLocation("maxs_mixtapes:textures/screens/atlas/imagebutton_new_play_button.png"), 16, 32, e -> {
-			if (true) {
-				maxs_mixtapes.PACKET_HANDLER.sendToServer(new MMBlockmanMessage(0, x, y, z));
-				MMBlockmanMessage.handleButtonAction(entity, 0, x, y, z);
-			}
-		});
+			maxs_mixtapes.PACKET_HANDLER.sendToServer(new MMBlockmanMessage(0, x, y, z));
+            try {
+                MMBlockmanMessage.handleButtonAction(entity, 0, x, y, z);
+            } catch (InterruptedException ex) {
+                throw new RuntimeException(ex);
+            }
+        });
 		guistate.put("button:imagebutton_new_play_button", imagebutton_new_play_button);
 		this.addRenderableWidget(imagebutton_new_play_button);
 
 		imagebutton_new_stop = new ImageButton(this.leftPos + 133, this.topPos + 27, 16, 16, 0, 0, 16, new ResourceLocation("maxs_mixtapes:textures/screens/atlas/imagebutton_new_stop.png"), 16, 32, e -> {
-			if (true) {
-				maxs_mixtapes.PACKET_HANDLER.sendToServer(new MMBlockmanMessage(0, x, y, z));
-				MMBlockmanMessage.handleButtonAction(entity, 1, x, y, z);
-			}
-		});
+            maxs_mixtapes.PACKET_HANDLER.sendToServer(new MMBlockmanMessage(1, x, y, z));
+            try {
+                MMBlockmanMessage.handleButtonAction(entity, 1, x, y, z);
+            } catch (InterruptedException ex) {
+                throw new RuntimeException(ex);
+            }
+        });
 		guistate.put("button:imagebutton_new_stop", imagebutton_new_stop);
 		this.addRenderableWidget(imagebutton_new_stop);
 
 		imagebutton_loop_neutral = new ImageButton(this.leftPos + 115, this.topPos + 45, 16, 16, 0, 0, 16, new ResourceLocation("maxs_mixtapes:textures/screens/atlas/imagebutton_loop_neutral.png"), 16, 32, e -> {
-			if (true) {
-				maxs_mixtapes.PACKET_HANDLER.sendToServer(new MMBlockmanMessage(0, x, y, z));
-				MMBlockmanMessage.handleButtonAction(entity, 2, x, y, z);
-			}
-		});
+            maxs_mixtapes.PACKET_HANDLER.sendToServer(new MMBlockmanMessage(2, x, y, z));
+            try {
+                MMBlockmanMessage.handleButtonAction(entity, 2, x, y, z);
+            } catch (InterruptedException ex) {
+                throw new RuntimeException(ex);
+            }
+        });
 		guistate.put("button:imagebutton_loop_neutral", imagebutton_loop_neutral);
 		this.addRenderableWidget(imagebutton_loop_neutral);
 		
 		imagebutton_queue_neutral = new ImageButton(this.leftPos + 133, this.topPos + 45, 16, 16, 0, 0, 16, new ResourceLocation("maxs_mixtapes:textures/screens/atlas/imagebutton_queue_neutral.png"), 16, 32, e -> {
-			if (true) {
-				maxs_mixtapes.PACKET_HANDLER.sendToServer(new MMBlockmanMessage(3, x, y, z));
-				MMBlockmanMessage.handleButtonAction(entity, 3, x, y, z);
-			}
-		});
+            maxs_mixtapes.PACKET_HANDLER.sendToServer(new MMBlockmanMessage(3, x, y, z));
+            try {
+                MMBlockmanMessage.handleButtonAction(entity, 3, x, y, z);
+            } catch (InterruptedException ex) {
+                throw new RuntimeException(ex);
+            }
+        });
 		guistate.put("button:imagebutton_queue_neutral", imagebutton_queue_neutral);
 		this.addRenderableWidget(imagebutton_queue_neutral);
 	}

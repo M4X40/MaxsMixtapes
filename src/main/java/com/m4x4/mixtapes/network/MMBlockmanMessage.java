@@ -1,6 +1,7 @@
 
 package com.m4x4.mixtapes.network;
 
+import com.m4x4.mixtapes.functions.blockman.MMBlockmanLoop;
 import com.m4x4.mixtapes.functions.blockman.MMBlockmanStop;
 import com.m4x4.mixtapes.world.inventory.MMBlockmanMenu;
 import net.minecraftforge.network.NetworkEvent;
@@ -53,21 +54,27 @@ public class MMBlockmanMessage {
 			int y = message.y;
 			int z = message.z;
             assert entity != null;
-            handleButtonAction(entity, buttonID, x, y, z);
-		});
+            try {
+                handleButtonAction(entity, buttonID, x, y, z);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        });
 		context.setPacketHandled(true);
 	}
 
-	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
+	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) throws InterruptedException {
 		Level world = entity.level;
 		HashMap<String, Object> guistate = MMBlockmanMenu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
 		if (buttonID == 0) {
-			MMBlockmanPlay.ButtonPressed(entity, entity);
+			MMBlockmanPlay.ButtonPressed(entity, entity, true);
 		} else if (buttonID == 1) {
 			MMBlockmanStop.ButtonPressed(entity, entity);
+		} else if (buttonID == 2) {
+			MMBlockmanLoop.ButtonPressed(entity, entity);
 		}
 	}
 
