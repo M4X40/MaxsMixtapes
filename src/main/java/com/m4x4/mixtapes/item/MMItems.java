@@ -169,6 +169,20 @@ public class MMItems {
     public static final RegistryObject<Item> cassette_pm = ITEMS.register("cassette_pm", () -> new MMCassetteItem(8, MMSongs.PM, new Item.Properties().tab(MMDiscTab.instance).stacksTo(1).rarity(Rarity.RARE), 1740, "[TBD]"));
     public static final RegistryObject<Item> cassette_poam = ITEMS.register("cassette_poam", () -> new MMCassetteItem(8, MMSongs.POTM, new Item.Properties().tab(MMDiscTab.instance).stacksTo(1).rarity(Rarity.RARE), 2700, "[TBD]"));
 
+    //---------------------------------------------//
+    public static final RegistryObject<Item> cassette_guns_blazing = ITEMS.register("cassette_guns_blazing", () -> new MMCassetteItem(8, MMSongs.POTM, new Item.Properties().tab(MMDiscTab.instance).stacksTo(1).rarity(Rarity.RARE), 2700, "[TBD]"));
+    public static final RegistryObject<Item> cassette_showdown = ITEMS.register("cassette_showdown", () -> new MMCassetteItem(8, MMSongs.POTM, new Item.Properties().tab(MMDiscTab.instance).stacksTo(1).rarity(Rarity.RARE), 2700, "[TBD]"));
+    public static final RegistryObject<Item> cassette_trial_by_fury = ITEMS.register("cassette_trial_by_fury", () -> new MMCassetteItem(8, MMSongs.POTM, new Item.Properties().tab(MMDiscTab.instance).stacksTo(1).rarity(Rarity.RARE), 2700, "[TBD]"));
+    public static final RegistryObject<Item> cassette_terrible_things = ITEMS.register("cassette_terrible_things", () -> new MMCassetteItem(8, MMSongs.POTM, new Item.Properties().tab(MMDiscTab.instance).stacksTo(1).rarity(Rarity.RARE), 2700, "[TBD]"));
+    public static final RegistryObject<Item> cassette_lkr = ITEMS.register("cassette_lkr", () -> new MMCassetteItem(8, MMSongs.POTM, new Item.Properties().tab(MMDiscTab.instance).stacksTo(1).rarity(Rarity.RARE), 2700, "[TBD]"));
+    public static final RegistryObject<Item> cassette_tiys = ITEMS.register("cassette_tiys", () -> new MMCassetteItem(8, MMSongs.POTM, new Item.Properties().tab(MMDiscTab.instance).stacksTo(1).rarity(Rarity.RARE), 2700, "[TBD]"));
+    public static final RegistryObject<Item> cassette_alastors_game = ITEMS.register("cassette_alastors_game", () -> new MMCassetteItem(8, MMSongs.POTM, new Item.Properties().tab(MMDiscTab.instance).stacksTo(1).rarity(Rarity.RARE), 2700, "[TBD]"));
+    public static final RegistryObject<Item> cassette_lots = ITEMS.register("cassette_lots", () -> new MMCassetteItem(8, MMSongs.POTM, new Item.Properties().tab(MMDiscTab.instance).stacksTo(1).rarity(Rarity.RARE), 2700, "[TBD]"));
+    public static final RegistryObject<Item> cassette_ddyd = ITEMS.register("cassette_ddyd", () -> new MMCassetteItem(8, MMSongs.POTM, new Item.Properties().tab(MMDiscTab.instance).stacksTo(1).rarity(Rarity.RARE), 2700, "[TBD]"));
+    public static final RegistryObject<Item> cassette_afterlife = ITEMS.register("cassette_afterlife", () -> new MMCassetteItem(8, MMSongs.POTM, new Item.Properties().tab(MMDiscTab.instance).stacksTo(1).rarity(Rarity.RARE), 2700, "[TBD]"));
+    public static final RegistryObject<Item> cassette_mothers_love = ITEMS.register("cassette_mothers_love", () -> new MMCassetteItem(8, MMSongs.POTM, new Item.Properties().tab(MMDiscTab.instance).stacksTo(1).rarity(Rarity.RARE), 2700, "[TBD]"));
+    public static final RegistryObject<Item> cassette_jlmw = ITEMS.register("cassette_jlmw", () -> new MMCassetteItem(8, MMSongs.POTM, new Item.Properties().tab(MMDiscTab.instance).stacksTo(1).rarity(Rarity.RARE), 2700, "[TBD]"));
+
     //// Items
     public static final RegistryObject<Item> bull_pill = ITEMS.register("bull_pill", () -> new MMItem(new Item.Properties().tab(MMItemTab.instance).stacksTo(64).rarity(Rarity.RARE).food(FoodItems.bull_pill), "[TBD]"));
     public static final RegistryObject<MMPotionItem> agent_rainbow = ITEMS.register("agent_rainbow", () -> new MMPotionItem(new Item.Properties().tab(MMItemTab.instance).stacksTo(16).rarity(Rarity.EPIC).food(FoodItems.agent_rainbow), "Easy access into the collective unconsious"));
@@ -198,9 +212,9 @@ public class MMItems {
 
     public static class FoodItems {
         public static final FoodProperties bull_pill = new FoodProperties.Builder().nutrition(4).saturationMod(0.3f).alwaysEat().build();
-        public static final FoodProperties agent_rainbow = new FoodProperties.Builder().nutrition(-4).saturationMod(-0.5f).alwaysEat().effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 200, 3), 1.0f).build(); // Make drink
+        public static final FoodProperties agent_rainbow = new FoodProperties.Builder().nutrition(-4).saturationMod(-0.5f).alwaysEat().effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 200, 3), 1.0f).build();
         public static final FoodProperties turron = new FoodProperties.Builder().nutrition(6).saturationMod(0.8f).build();
-        public static final FoodProperties coffin_varnish = new FoodProperties.Builder().nutrition(-2).saturationMod(0.3f).alwaysEat().effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 200, 3), 1.0f).build(); // Make drink
+        public static final FoodProperties coffin_varnish = new FoodProperties.Builder().nutrition(-2).saturationMod(0.3f).alwaysEat().effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 200, 3), 1.0f).build();
     }
 
 }

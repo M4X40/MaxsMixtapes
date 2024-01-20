@@ -1,23 +1,22 @@
 package com.m4x4.mixtapes.client.gui;
 
+import com.m4x4.mixtapes.functions.handlers.MMBlockmanStoreSlots;
 import com.m4x4.mixtapes.maxs_mixtapes;
 import com.m4x4.mixtapes.network.MMBlockmanMessage;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.ImageButton;
+import com.m4x4.mixtapes.world.inventory.MMBlockmanMenu;
+import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.components.ImageButton;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
-
-import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.blaze3d.systems.RenderSystem;
-
-import com.m4x4.mixtapes.world.inventory.MMBlockmanMenu;
-import org.jetbrains.annotations.NotNull;
 
 public class MMBlockmanScreen extends AbstractContainerScreen<MMBlockmanMenu> {
 	private final static HashMap<String, Object> guistate = MMBlockmanMenu.guistate;
@@ -68,6 +67,7 @@ public class MMBlockmanScreen extends AbstractContainerScreen<MMBlockmanMenu> {
 		if (key == 256) {
             assert this.minecraft != null;
             assert this.minecraft.player != null;
+			MMBlockmanStoreSlots.retrieveSlots(this.minecraft.player);
             this.minecraft.player.closeContainer();
 			return true;
 		}
@@ -86,6 +86,8 @@ public class MMBlockmanScreen extends AbstractContainerScreen<MMBlockmanMenu> {
 
 	@Override
 	public void onClose() {
+        assert this.minecraft != null;
+        MMBlockmanStoreSlots.retrieveSlots(this.minecraft.player);
 		super.onClose();
 		Minecraft.getInstance().keyboardHandler.setSendRepeatsToGui(false);
 	}

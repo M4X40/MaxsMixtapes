@@ -68,6 +68,7 @@ public class MMGlobals {
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			clone.isLooped = original.isLooped;
 			clone.isQueued = original.isQueued;
+			clone.StopCounter = original.StopCounter;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -106,6 +107,7 @@ public class MMGlobals {
 	public static class PlayerVariables {
 		public boolean isLooped = false;
 		public boolean isQueued = false;
+		public int StopCounter = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -116,6 +118,7 @@ public class MMGlobals {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putBoolean("isLooped", isLooped);
 			nbt.putBoolean("isQueued", isQueued);
+			nbt.putInt("StopCounter", StopCounter);
 			return nbt;
 		}
 
@@ -123,6 +126,7 @@ public class MMGlobals {
 			CompoundTag nbt = (CompoundTag) Tag;
 			isLooped = nbt.getBoolean("isLooped");
 			isQueued = nbt.getBoolean("isQueued");
+			StopCounter = nbt.getInt("StopCounter");
 		}
 	}
 
@@ -149,6 +153,7 @@ public class MMGlobals {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.isLooped = message.data.isLooped;
 					variables.isQueued = message.data.isQueued;
+					variables.StopCounter = message.data.StopCounter;
 				}
 			});
 			context.setPacketHandled(true);
@@ -172,6 +177,16 @@ public class MMGlobals {
 		public static void setIsQueued(Entity entity, Boolean value) {
 			entity.getCapability(MMGlobals.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.isQueued = value;
+				capability.syncPlayerVariables(entity);
+			});
+		}
+
+		public static int getStopCounter(Entity entity) {
+			return (entity.getCapability(MMGlobals.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).StopCounter;
+		}
+		public static void setStopCounter(Entity entity, int value) {
+			entity.getCapability(MMGlobals.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.StopCounter = value;
 				capability.syncPlayerVariables(entity);
 			});
 		}

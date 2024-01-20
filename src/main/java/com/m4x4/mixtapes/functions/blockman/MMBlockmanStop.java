@@ -1,6 +1,7 @@
 package com.m4x4.mixtapes.functions.blockman;
 
 import com.m4x4.mixtapes.item.MMCassetteItem;
+import com.m4x4.mixtapes.network.MMGlobals;
 import net.minecraft.client.Minecraft;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
@@ -28,6 +29,7 @@ public class MMBlockmanStop {
         }
 
         Minecraft.getInstance().getSoundManager().stop(song.getLocation(), SoundSource.RECORDS);
+        MMGlobals.Accessor.setStopCounter(pl ,MMGlobals.Accessor.getStopCounter(pl) + 1);
 
     }
 }
