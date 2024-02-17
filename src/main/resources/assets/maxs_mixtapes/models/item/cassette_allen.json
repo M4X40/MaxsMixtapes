@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/allen_tape"
+    "layer0": "maxs_mixtapes:item/bottom_of_the_pit"
   }
 }

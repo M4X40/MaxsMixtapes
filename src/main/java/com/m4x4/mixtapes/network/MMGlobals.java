@@ -69,6 +69,8 @@ public class MMGlobals {
 			clone.isLooped = original.isLooped;
 			clone.isQueued = original.isQueued;
 			clone.StopCounter = original.StopCounter;
+			clone.SwapOnOpen = original.SwapOnOpen;
+			clone.SwapAmount = original.SwapAmount;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -108,6 +110,8 @@ public class MMGlobals {
 		public boolean isLooped = false;
 		public boolean isQueued = false;
 		public int StopCounter = 0;
+		public boolean SwapOnOpen = false;
+		public int SwapAmount = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -127,6 +131,8 @@ public class MMGlobals {
 			isLooped = nbt.getBoolean("isLooped");
 			isQueued = nbt.getBoolean("isQueued");
 			StopCounter = nbt.getInt("StopCounter");
+			SwapOnOpen = nbt.getBoolean("SwapOnOpen");
+			SwapAmount = nbt.getInt("SwapAmount");
 		}
 	}
 
@@ -154,6 +160,8 @@ public class MMGlobals {
 					variables.isLooped = message.data.isLooped;
 					variables.isQueued = message.data.isQueued;
 					variables.StopCounter = message.data.StopCounter;
+					variables.SwapOnOpen = message.data.SwapOnOpen;
+					variables.SwapAmount = message.data.SwapAmount;
 				}
 			});
 			context.setPacketHandled(true);
@@ -187,6 +195,26 @@ public class MMGlobals {
 		public static void setStopCounter(Entity entity, int value) {
 			entity.getCapability(MMGlobals.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.StopCounter = value;
+				capability.syncPlayerVariables(entity);
+			});
+		}
+
+		public static Boolean getSwapOnOpen(Entity entity) {
+			return (entity.getCapability(MMGlobals.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).SwapOnOpen;
+		}
+		public static void setSwapOnOpen(Entity entity, Boolean value) {
+			entity.getCapability(MMGlobals.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.SwapOnOpen = value;
+				capability.syncPlayerVariables(entity);
+			});
+		}
+
+		public static int getSwapAmount(Entity entity) {
+			return (entity.getCapability(MMGlobals.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).SwapAmount;
+		}
+		public static void setSwapAmount(Entity entity, int value) {
+			entity.getCapability(MMGlobals.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.SwapAmount = value;
 				capability.syncPlayerVariables(entity);
 			});
 		}

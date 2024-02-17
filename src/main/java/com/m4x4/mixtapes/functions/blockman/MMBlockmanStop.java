@@ -1,5 +1,6 @@
 package com.m4x4.mixtapes.functions.blockman;
 
+import com.m4x4.mixtapes.functions.handlers.MMBlockmanStoreSlots;
 import com.m4x4.mixtapes.item.MMCassetteItem;
 import com.m4x4.mixtapes.network.MMGlobals;
 import net.minecraft.client.Minecraft;
@@ -17,8 +18,7 @@ import java.util.function.Supplier;
 
 public class MMBlockmanStop {
     public static void ButtonPressed (Entity en, Player pl) {
-        ItemStack CassetteStack = en instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY;
-        Item Cassette = CassetteStack.getItem();
+        Item Cassette = MMBlockmanStoreSlots.getSlot(0);
         SoundEvent song;
         if (Cassette.getClass() == MMCassetteItem.class) {
             song = ((MMCassetteItem) Cassette).getMMSong();
@@ -27,9 +27,10 @@ public class MMBlockmanStop {
         } else {
             return;
         }
-
         Minecraft.getInstance().getSoundManager().stop(song.getLocation(), SoundSource.RECORDS);
         MMGlobals.Accessor.setStopCounter(pl ,MMGlobals.Accessor.getStopCounter(pl) + 1);
+        MMGlobals.Accessor.setSwapAmount(pl, 0);
+        MMGlobals.Accessor.setSwapOnOpen(pl, false);
 
     }
 }

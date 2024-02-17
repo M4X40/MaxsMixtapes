@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/bad_end_theater"
+    "layer0": "maxs_mixtapes:item/bad_end_theater"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/buckle_tape"
+    "layer0": "maxs_mixtapes:item/1_2_buckle_my_shoe_phonk"
   }
 }

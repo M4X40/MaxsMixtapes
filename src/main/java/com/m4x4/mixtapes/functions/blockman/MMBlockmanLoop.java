@@ -1,5 +1,6 @@
 package com.m4x4.mixtapes.functions.blockman;
 
+import com.m4x4.mixtapes.network.MMDebugLogging;
 import com.m4x4.mixtapes.network.MMGlobals;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.entity.Entity;
@@ -13,7 +14,7 @@ public class MMBlockmanLoop {
 
         MMGlobals.Accessor.setIsLooped(en, !check);
 
-        maxs_mixtapes.LOGGER.debug(String.valueOf(!check));
+        MMDebugLogging.debugS(String.valueOf(!check));
 
         if (check) {
             // Inactive button images

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/wild_side"
+    "layer0": "maxs_mixtapes:item/wild_side"
   }
 }

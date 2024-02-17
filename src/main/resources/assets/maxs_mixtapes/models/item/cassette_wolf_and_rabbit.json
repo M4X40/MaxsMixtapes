@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/haru"
+    "layer0": "maxs_mixtapes:item/wolf_and_rabbit"
   }
 }

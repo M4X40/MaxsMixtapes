@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/toniare"
+    "layer0": "maxs_mixtapes:item/how_it_seems_to_end"
   }
 }

@@ -2,6 +2,7 @@
 package com.m4x4.mixtapes.network;
 
 import com.m4x4.mixtapes.functions.blockman.MMBlockmanLoop;
+import com.m4x4.mixtapes.functions.blockman.MMBlockmanQueue;
 import com.m4x4.mixtapes.functions.blockman.MMBlockmanStop;
 import com.m4x4.mixtapes.world.inventory.MMBlockmanMenu;
 import net.minecraftforge.network.NetworkEvent;
@@ -75,6 +76,8 @@ public class MMBlockmanMessage {
 			MMBlockmanStop.ButtonPressed(entity, entity);
 		} else if (buttonID == 2) {
 			MMBlockmanLoop.ButtonPressed(entity, entity);
+		} else if (buttonID == 3) {
+			MMBlockmanQueue.ButtonPressed(entity, entity);
 		}
 	}
 

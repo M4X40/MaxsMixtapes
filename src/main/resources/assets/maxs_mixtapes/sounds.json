@@ -1126,5 +1126,133 @@
         "stream": true
       }
     ]
+  },
+  "guns_blazing": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:guns_blazing",
+        "stream": true
+      }
+    ]
+  },
+  "showdown": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:showdown",
+        "stream": true
+      }
+    ]
+  },
+  "tbf": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:trial_by_fury",
+        "stream": true
+      }
+    ]
+  },
+  "terrible_things": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:terrible_things_fnaf_original_song_axie",
+        "stream": true
+      }
+    ]
+  },
+  "lkr": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:little_kandi_raver_2012_original_mix",
+        "stream": true
+      }
+    ]
+  },
+  "tiys": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:fractured_franchise_-_talking_in_your_sleep_ost",
+        "stream": true
+      }
+    ]
+  },
+  "insane": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:insane_a_hazbin_hotel_song_-_black_gryph0n_baasik",
+        "stream": true
+      }
+    ]
+  },
+  "lots": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:land_of_the_sun_official_audio",
+        "stream": true
+      }
+    ]
+  },
+  "ddyd": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:undertale_remix_sharax_-_dark_darker_yet_darker",
+        "stream": true
+      }
+    ]
+  },
+  "afterlife": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:afterlife_all_specimen_sequences_inbetween",
+        "stream": true
+      }
+    ]
+  },
+  "mothers_love": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:a_mothers_love",
+        "stream": true
+      }
+    ]
+  },
+  "jlmw": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:just_look_my_way_-official_music_video_-_helluva_boss",
+        "stream": true
+      }
+    ]
+  },
+  "sans": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:sans",
+        "stream": true
+      }
+    ]
+  },
+  "efae": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:eye_for_an_eye_-_ggunderfell_ost",
+        "stream": true
+      }
+    ]
+  },
+  "loser_baby": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:loser_baby_hazbin_hotel_soundtrack",
+        "stream": true
+      }
+    ]
+  },
+  "too_close": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:too_close",
+        "stream": true
+      }
+    ]
   }
 }

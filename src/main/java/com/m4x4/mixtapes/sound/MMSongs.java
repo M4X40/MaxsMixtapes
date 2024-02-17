@@ -149,10 +149,29 @@ public class MMSongs {
     public static final RegistryObject<SoundEvent> ALPHA = registerSoundEvent("alpha");
     public static final RegistryObject<SoundEvent> MOV = registerSoundEvent("mov");
     public static final RegistryObject<SoundEvent> VITAL = registerSoundEvent("vital");
+    public static final RegistryObject<SoundEvent> GUNS_BLAZING = registerSoundEvent("guns_blazing");
+    public static final RegistryObject<SoundEvent> SHOWDOWN = registerSoundEvent("showdown");
+    public static final RegistryObject<SoundEvent> TBF = registerSoundEvent("tbf");
+    public static final RegistryObject<SoundEvent> TERRIBLE_THINGS = registerSoundEvent("terrible_things");
+    public static final RegistryObject<SoundEvent> LKR = registerSoundEvent("lkr");
+    public static final RegistryObject<SoundEvent> TIYS = registerSoundEvent("tiys");
+    public static final RegistryObject<SoundEvent> INSANE = registerSoundEvent("insane");
+    public static final RegistryObject<SoundEvent> LOTS = registerSoundEvent("lots");
+    public static final RegistryObject<SoundEvent> DDYD = registerSoundEvent("ddyd");
+    public static final RegistryObject<SoundEvent> AFTERLIFE = registerSoundEvent("afterlife");
+    public static final RegistryObject<SoundEvent> MOTHERS_LOVE = registerSoundEvent("mothers_love");
+    public static final RegistryObject<SoundEvent> JLMW = registerSoundEvent("jlmw");
+    public static final RegistryObject<SoundEvent> SANS = registerSoundEvent("sans");
+    public static final RegistryObject<SoundEvent> EFAE = registerSoundEvent("efae");
+    public static final RegistryObject<SoundEvent> STEPBACK = registerSoundEvent("stepback");
+    public static final RegistryObject<SoundEvent> LOSER_BABY = registerSoundEvent("loser_baby");
+    public static final RegistryObject<SoundEvent> TOO_CLOSE = registerSoundEvent("too_close");
 
     // Extra Sounds
     public static final RegistryObject<SoundEvent> DANBREAD = registerSoundEvent("danbread");
     public static final RegistryObject<SoundEvent> THEBEAST = registerSoundEvent("thebeast");
+
+
     public static final RegistryObject<SoundEvent> ROME_REACTION = registerSoundEvent("rome_reaction");
     // Add Registry above
     private static RegistryObject<SoundEvent> registerSoundEvent(String name) {

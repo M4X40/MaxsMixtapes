@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/vanny_mommy"
+    "layer0": "maxs_mixtapes:item/leave_me_behind"
   }
 }

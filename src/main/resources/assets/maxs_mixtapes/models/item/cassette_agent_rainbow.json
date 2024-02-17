@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/agent_rainbow_tape"
+    "layer0": "maxs_mixtapes:item/here_comes_a_savior"
   }
 }

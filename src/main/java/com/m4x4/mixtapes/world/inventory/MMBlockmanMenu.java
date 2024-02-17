@@ -1,6 +1,9 @@
 
 package com.m4x4.mixtapes.world.inventory;
 
+import com.m4x4.mixtapes.functions.handlers.MMBlockmanOnOpen;
+import com.m4x4.mixtapes.functions.handlers.MMBlockmanStoreSlots;
+import net.minecraft.client.Minecraft;
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
@@ -110,9 +113,12 @@ public class MMBlockmanMenu extends AbstractContainerMenu implements Supplier<Ma
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 10, 8 + sj * 18, 34 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 34 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, 8 + si * 18, 34 + 142));
+			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 34 + 142));
+
+		MMBlockmanStoreSlots.retrieveSlots(Minecraft.getInstance().player);
+		MMBlockmanOnOpen.BlockmanOnOpen(Minecraft.getInstance().player);
 	}
 
 	@Override
@@ -129,7 +135,7 @@ public class MMBlockmanMenu extends AbstractContainerMenu implements Supplier<Ma
 	}
 
 	@Override
-	public @NotNull ItemStack quickMoveStack(@NotNull Player playerIn, int index) {
+	public ItemStack quickMoveStack(Player playerIn, int index) {
 		ItemStack itemstack = ItemStack.EMPTY;
 		Slot slot = (Slot) this.slots.get(index);
 		if (slot != null && slot.hasItem()) {

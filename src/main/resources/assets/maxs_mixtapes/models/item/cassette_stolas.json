@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/you_will_be_okay"
+    "layer0": "maxs_mixtapes:item/you_will_be_okay"
   }
 }
