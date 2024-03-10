@@ -1,5 +1,6 @@
 package com.m4x4.mixtapes.network;
 
+import net.minecraft.sounds.SoundEvent;
 import net.minecraftforge.network.PacketDistributor;
 import net.minecraftforge.network.NetworkEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;

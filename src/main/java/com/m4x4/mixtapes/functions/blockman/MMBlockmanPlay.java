@@ -1,11 +1,10 @@
 package com.m4x4.mixtapes.functions.blockman;
 
 import com.m4x4.mixtapes.functions.handlers.MMBlockmanErroring;
-import com.m4x4.mixtapes.functions.handlers.MMBlockmanQueueHandler;
 import com.m4x4.mixtapes.functions.handlers.MMBlockmanStoreSlots;
+import com.m4x4.mixtapes.functions.handlers.MMStoreCurrentSong;
 import com.m4x4.mixtapes.network.MMDebugLogging;
 import com.m4x4.mixtapes.network.MMGlobals;
-import com.m4x4.mixtapes.sound.soundPlayer;
 import com.m4x4.mixtapes.world.inventory.MMBlockmanMenu;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.entity.Entity;
@@ -13,14 +12,9 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 
 import com.m4x4.mixtapes.maxs_mixtapes;
-import net.minecraft.world.item.RecordItem;
-
-import java.util.Arrays;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class MMBlockmanPlay {
     public static void ButtonPressed (Entity en, Player pl, Boolean showerrors, int SlotNum) throws InterruptedException {
-        MMGlobals.Accessor.setIsQueued(en, false);
         MMBlockmanStop.ButtonPressed(en, pl);
         MMBlockmanStop.ButtonPressed(en, pl);
         MMBlockmanStop.ButtonPressed(en, pl);
@@ -29,6 +23,7 @@ public class MMBlockmanPlay {
         Item Cassette = MMBlockmanStoreSlots.getSlot(SlotNum);
         MMBlockmanErroring.CheckForErrors(Cassette, pl, en, showerrors, true); // Also plays audio
         SoundEvent song = MMBlockmanErroring.returnSong();
+        MMStoreCurrentSong.setCurrentSong(en, song);
         Boolean SuccessfulPlay = MMBlockmanErroring.returnSuccess();
 
         final int[] SongNum = {0};
