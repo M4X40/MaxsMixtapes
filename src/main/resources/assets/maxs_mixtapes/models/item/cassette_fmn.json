@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/1insoundmind_album"
+    "layer0": "maxs_mixtapes:item/five_more_nights"
   }
 }

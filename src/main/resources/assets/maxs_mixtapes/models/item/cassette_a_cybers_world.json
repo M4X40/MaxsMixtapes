@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/cybers_world"
+    "layer0": "maxs_mixtapes:item/a_cybers_world"
   }
 }

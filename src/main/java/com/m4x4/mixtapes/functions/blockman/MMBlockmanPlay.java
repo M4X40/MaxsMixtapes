@@ -19,95 +19,123 @@ import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class MMBlockmanPlay {
-    public static void ButtonPressed (Entity en, Player pl, Boolean showerrors) throws InterruptedException {
+    public static void ButtonPressed (Entity en, Player pl, Boolean showerrors, int SlotNum) throws InterruptedException {
+        MMGlobals.Accessor.setIsQueued(en, false);
         MMBlockmanStop.ButtonPressed(en, pl);
-        int OldStopCount = MMGlobals.Accessor.getStopCounter(pl);
+        MMBlockmanStop.ButtonPressed(en, pl);
+        MMBlockmanStop.ButtonPressed(en, pl);
+        int OldStopCount = MMGlobals.Accessor.getstopCounter(pl);
         MMBlockmanStoreSlots.retrieveSlots(en);
-        Item Cassette = MMBlockmanStoreSlots.getSlot(0);
+        Item Cassette = MMBlockmanStoreSlots.getSlot(SlotNum);
         MMBlockmanErroring.CheckForErrors(Cassette, pl, en, showerrors, true); // Also plays audio
         SoundEvent song = MMBlockmanErroring.returnSong();
         Boolean SuccessfulPlay = MMBlockmanErroring.returnSuccess();
 
-        Boolean LoopCheck = MMGlobals.Accessor.getIsLooped(pl);
-        Boolean QueueCheck = MMGlobals.Accessor.getIsQueued(pl);
-
         final int[] SongNum = {0};
 
         LoopCycle(en, pl, SuccessfulPlay, MMBlockmanStoreSlots.getSongs(en, pl), SongNum, MMBlockmanStoreSlots.getSongLengths(en, pl));
-
     }
 
     public static void LoopCycle(Entity en, Player pl, Boolean SuccessfulPlay, SoundEvent[] Songs, int[] SongNum, int[] SongLengths) {
-        Boolean LoopCheck = MMGlobals.Accessor.getIsLooped(pl);
-        Boolean QueueCheck = MMGlobals.Accessor.getIsQueued(pl);
-        int OldStopCount = MMGlobals.Accessor.getStopCounter(pl);
+        final Boolean[] LoopCheck = {MMGlobals.Accessor.getIsLooped(pl)};
+        final Boolean[] QueueCheck = {MMGlobals.Accessor.getIsQueued(pl)};
+        int OldStopCount = MMGlobals.Accessor.getstopCounter(pl);
+        final Object lock = new Object();
 
-        if (SuccessfulPlay && (LoopCheck || QueueCheck)) {
+        if (SuccessfulPlay && (LoopCheck[0] || QueueCheck[0])) {
             int length = SongLengths[SongNum[0]];
-            maxs_mixtapes.queueServerWork(length, () -> {
-                if (OldStopCount == MMGlobals.Accessor.getStopCounter(pl)) {
-                    if (!QueueCheck && LoopCheck) { // Loop 1
+            maxs_mixtapes.queueServerWork(length + 20, () -> {
+                LoopCheck[0] = MMGlobals.Accessor.getIsLooped(pl);
+                QueueCheck[0] = MMGlobals.Accessor.getIsQueued(pl);
+                if (OldStopCount == MMGlobals.Accessor.getstopCounter(pl)) {
+                    MMBlockmanStop.ButtonPressed(en, pl);
+                    if (!QueueCheck[0] && LoopCheck[0]) { // Loop 1
                         if (en instanceof Player _plr ? _plr.containerMenu instanceof MMBlockmanMenu : false) {
                             try {
-                                ButtonPressed(en, pl, true);
+                                ButtonPressed(en, pl, true, 0);
                             } catch (InterruptedException e) {
                                 throw new RuntimeException(e);
                             }
                         } else {
                             Item Slot0 = MMBlockmanStoreSlots.getSlot(0);
+                            MMDebugLogging.debugS(String.valueOf(Slot0));
                             MMBlockmanErroring.CheckForErrors(Slot0, pl, en, true, true);
-                            LoopCycle(en, pl, SuccessfulPlay, Songs, SongNum, SongLengths);
-                        }
-                    } else if (QueueCheck) { // Queue System
-                        int NextSongIndex = 1;
-                        if (SongNum[0] < 8) {
-                            for (int i = 1; i < Songs.length - 1 - SongNum[0]; i++) {
-                                if (Songs[i] != null) {
-                                    NextSongIndex = i;
-                                    break;
-                                }
-                                NextSongIndex = -1;
-                            }
-                            if (NextSongIndex != -1) {
-                                SongNum[0] += NextSongIndex;
-                            } else {
-                                SongNum[0] = 0;
-                            }
-                        } else if (SongNum[0] == 8) {
-                            if (Songs[9] != null) {
-                                SongNum[0] = 9;
-                            } else {
-                                SongNum[0] = 0;
-                            }
-                        } else {
-                            SongNum[0] = 0;
-                        }
-                        MMDebugLogging.debugS(Arrays.toString(MMBlockmanStoreSlots.getSongNames(en, pl)));
-                        MMDebugLogging.debugS("" + String.valueOf(NextSongIndex) + " | " + String.valueOf(SongNum[0]));
-                        if (SongNum[0] != 0 || LoopCheck) { // Continue (Both Queue Only AND Loop All)
-                            if (en instanceof Player _plr ? _plr.containerMenu instanceof MMBlockmanMenu : false) {
-                                // Open
-                                for (int i = 0; i < NextSongIndex; i++) {
-                                    MMBlockmanStoreSlots.retrieveSlots(en);
-                                    MMBlockmanQueueHandler.SwapSlots(en);
-                                }
-                            } else {
-                                // Closed
-                                MMGlobals.Accessor.setSwapOnOpen(en, true);
-                                MMBlockmanQueueHandler.QueueHandler(en);
-                                MMDebugLogging.debugS("[SwapStuff] " + String.valueOf(MMGlobals.Accessor.getSwapOnOpen(en)) + " | " + String.valueOf(MMGlobals.Accessor.getSwapAmount(en)));
-                            }
-                            soundPlayer.playSound(pl, Songs[SongNum[0]]);
-
-                            LoopCycle(en, pl, SuccessfulPlay, Songs, SongNum, SongLengths);
-                        } else { // Stop (Queue Only End)
-                            MMBlockmanStoreSlots.retrieveSlots(en);
-                            MMBlockmanQueueHandler.SwapSlots(en);
-                            MMGlobals.Accessor.setIsQueued(en, false);
+                            LoopCycle(en, pl, MMBlockmanErroring.returnSuccess(), Songs, SongNum, SongLengths);
                         }
                     }
+//                    else if (QueueCheck) { // Queue System
+//                        synchronized(lock) { // Add a synchronized block
+//                            MMDebugLogging.debugS("Entering QueueCheck block");
+//                            int NextSongIndex = 1;
+//                            if (SongNum[0] < 8) {
+//                                MMDebugLogging.debugS("SongNum[0] < 8, looking for next song index");
+//                                for (int i = 1; i < Songs.length - 1 - SongNum[0]; i++) {
+//                                    if (Songs[i] != null) {
+//                                        NextSongIndex = i;
+//                                        break;
+//                                    }
+//                                    NextSongIndex = -1;
+//                                }
+//                                MMDebugLogging.debugS("NextSongIndex: " + NextSongIndex);
+//                                if (NextSongIndex != -1) {
+//                                    SongNum[0] += NextSongIndex;
+//                                } else {
+//                                    SongNum[0] = 0;
+//                                }
+//                            } else if (SongNum[0] == 8) {
+//                                MMDebugLogging.debugS("SongNum[0] == 8, checking if Songs[9] is not null");
+//                                if (Songs[9] != null) {
+//                                    SongNum[0] = 9;
+//                                } else {
+//                                    SongNum[0] = 0;
+//                                }
+//                            } else {
+//                                SongNum[0] = 0;
+//                            }
+//                            MMDebugLogging.debugS("SongNum[0]: " + SongNum[0]);
+//                            MMDebugLogging.debugS(Arrays.toString(MMBlockmanStoreSlots.getSongNames(en, pl)));
+//                            MMDebugLogging.debugS("" + String.valueOf(NextSongIndex) + " | " + String.valueOf(SongNum[0]));
+//                            if (SongNum[0] != 0 || LoopCheck) { // Continue (Both Queue Only AND Loop All)
+//                                MMDebugLogging.debugS("Entering Continue block");
+//                                if (en instanceof Player _plr ? _plr.containerMenu instanceof MMBlockmanMenu : false) {
+//                                    // Open
+//                                    MMDebugLogging.debugS("GUI is open, swapping slots");
+//                                    for (int i = 0; i < NextSongIndex; i++) {
+//                                        MMBlockmanStoreSlots.retrieveSlots(en);
+//                                        MMBlockmanQueueHandler.SwapSlots(en);
+//                                    }
+//                                } else {
+//                                    // Closed
+//                                    MMDebugLogging.debugS("GUI is closed, setting swapOnOpen to true");
+//                                    MMGlobals.Accessor.setswapOnOpen(en, true);
+//                                    MMBlockmanQueueHandler.QueueHandler(en);
+//                                    MMDebugLogging.debugS("[SwapStuff] " + String.valueOf(MMGlobals.Accessor.getswapOnOpen(en)) + " | " + String.valueOf(MMGlobals.Accessor.getswapAmount(en)));
+//                                }
+//                                maxs_mixtapes.queueServerWork(20, () -> {
+//                                    synchronized(lock) {
+//                                        try {
+//                                            MMDebugLogging.debugS("Playing sound: " + Songs[SongNum[0]]);
+//                                            soundPlayer.playSound(pl, Songs[SongNum[0]]);
+//                                        } catch (Exception e) {
+//                                            MMDebugLogging.debugS("Exception caught while trying to play sound: " + e.getMessage());
+//                                            e.printStackTrace();
+//                                        }
+//                                    }
+//                                });
+//
+//                                LoopCycle(en, pl, SuccessfulPlay, Songs, SongNum, SongLengths);
+//                            } else { // Stop (Queue Only End)
+//                                MMDebugLogging.debugS("Entering Stop block");
+//                                MMBlockmanStoreSlots.retrieveSlots(en);
+//                                MMBlockmanQueueHandler.SwapSlots(en);
+//                                MMGlobals.Accessor.setIsQueued(en, false);
+//                            }
+//                        }
+//                    }
                 }
             });
+        } else {
+            MMBlockmanStop.ButtonPressed(en, pl);
         }
     }
 }

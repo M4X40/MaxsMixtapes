@@ -71,7 +71,7 @@ public class MMBlockmanMessage {
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
 		if (buttonID == 0) {
-			MMBlockmanPlay.ButtonPressed(entity, entity, true);
+			MMBlockmanPlay.ButtonPressed(entity, entity, true, 0);
 		} else if (buttonID == 1) {
 			MMBlockmanStop.ButtonPressed(entity, entity);
 		} else if (buttonID == 2) {

@@ -111,14 +111,6 @@
       }
     ]
   },
-  "parasite": {
-    "sounds": [
-      {
-        "name": "maxs_mixtapes:parasite",
-        "stream": true
-      }
-    ]
-  },
   "eisop": {
     "sounds": [
       {
@@ -347,14 +339,6 @@
     "sounds": [
       {
         "name": "maxs_mixtapes:buckle_my_phonk",
-        "stream": true
-      }
-    ]
-  },
-  "pm": {
-    "sounds": [
-      {
-        "name": "maxs_mixtapes:pumpkin_moon",
         "stream": true
       }
     ]
@@ -970,7 +954,7 @@
   "lightsabers": {
     "sounds": [
       {
-        "name": "maxs_mixtapes:logic_-_lightsabers_feat_c_dot_castro_college_park",
+        "name": "maxs_mixtapes:logic_-_lightsabers_feat_c_dot_castro_432hz",
         "stream": true
       }
     ]
@@ -1170,7 +1154,7 @@
   "tiys": {
     "sounds": [
       {
-        "name": "maxs_mixtapes:fractured_franchise_-_talking_in_your_sleep_ost",
+        "name": "maxs_mixtapes:the_romantics_-talking_in_your_sleep_five_nights_at_freddys_movie",
         "stream": true
       }
     ]
@@ -1183,10 +1167,10 @@
       }
     ]
   },
-  "lots": {
+  "make_me_famous": {
     "sounds": [
       {
-        "name": "maxs_mixtapes:land_of_the_sun_official_audio",
+        "name": "maxs_mixtapes:make_me_famous_official_audio",
         "stream": true
       }
     ]
@@ -1251,6 +1235,62 @@
     "sounds": [
       {
         "name": "maxs_mixtapes:too_close",
+        "stream": true
+      }
+    ]
+  },
+  "im_sane": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:im_sane",
+        "stream": true
+      }
+    ]
+  },
+  "djbcd": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:madness_combat_1_soundtrack_dj_birdie_chicken_dance",
+        "stream": true
+      }
+    ]
+  },
+  "eidolon_step": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:fleetwire_-_eidolon_step",
+        "stream": true
+      }
+    ]
+  },
+  "adc": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:the_amazing_digital_circus_-_main_theme",
+        "stream": true
+      }
+    ]
+  },
+  "sunset_breakfast": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:tunic_original_soundtrack_-_29_sunset_breakfast__lifeformed_x_janice_kwan",
+        "stream": true
+      }
+    ]
+  },
+  "cats_on_mars": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:cats_on_mars",
+        "stream": true
+      }
+    ]
+  },
+  "a_realitys_grave": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:goodbye_to_a_world_by_porter_robinson_but_its_a_minecraft_soundtrack",
         "stream": true
       }
     ]

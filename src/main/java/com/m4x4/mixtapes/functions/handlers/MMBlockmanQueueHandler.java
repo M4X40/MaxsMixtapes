@@ -30,12 +30,12 @@ public class MMBlockmanQueueHandler {
     }
 
     public static void QueueHandler(Entity en) {
-        if (MMGlobals.Accessor.getSwapOnOpen(en)) {
-            MMDebugLogging.debugS("Before: " + MMGlobals.Accessor.getSwapAmount(en));
-            MMGlobals.Accessor.setSwapAmount(en, MMGlobals.Accessor.getSwapAmount(en) + 1);
-            MMDebugLogging.debugS("After: " + MMGlobals.Accessor.getSwapAmount(en));
-            if (MMGlobals.Accessor.getSwapAmount(en) > 9) {
-                MMGlobals.Accessor.setSwapAmount(en, 0);
+        if (MMGlobals.Accessor.getswapOnOpen(en)) {
+            MMDebugLogging.debugS("Before: " + MMGlobals.Accessor.getswapAmount(en));
+            MMGlobals.Accessor.setswapAmount(en, MMGlobals.Accessor.getswapAmount(en) + 1);
+            MMDebugLogging.debugS("After: " + MMGlobals.Accessor.getswapAmount(en));
+            if (MMGlobals.Accessor.getswapAmount(en) > 9) {
+                MMGlobals.Accessor.setswapAmount(en, 0);
             }
         }
     }

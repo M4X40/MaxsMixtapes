@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/universal_collapse_tape"
+    "layer0": "maxs_mixtapes:item/universal_collapse"
   }
 }

@@ -26,7 +26,6 @@ public class MMSongs {
     public static final RegistryObject<SoundEvent> FIVE_LONG_NIGHTS = registerSoundEvent("five_long_nights");
     public static final RegistryObject<SoundEvent> FMN = registerSoundEvent("fmn");
     public static final RegistryObject<SoundEvent> JUFAB = registerSoundEvent("jufab");
-    public static final RegistryObject<SoundEvent> PARASITE = registerSoundEvent("parasite");
     public static final RegistryObject<SoundEvent> EISOP = registerSoundEvent("eisop");
     public static final RegistryObject<SoundEvent> DJMM = registerSoundEvent("djmm");
     public static final RegistryObject<SoundEvent> GOLFSWAMP = registerSoundEvent("golfswamp");
@@ -56,7 +55,6 @@ public class MMSongs {
     public static final RegistryObject<SoundEvent> LOVE_ME_NORMALLY = registerSoundEvent("love_me_normally");
     public static final RegistryObject<SoundEvent> PUPPETEER = registerSoundEvent("puppeteer");
     public static final RegistryObject<SoundEvent> BMP = registerSoundEvent("bmp");
-    public static final RegistryObject<SoundEvent> PM = registerSoundEvent("pm");
     public static final RegistryObject<SoundEvent> TOACW = registerSoundEvent("toacw");
     public static final RegistryObject<SoundEvent> RETURN_TO_SLIME = registerSoundEvent("return_to_slime");
     public static final RegistryObject<SoundEvent> SOTU = registerSoundEvent("sotu");
@@ -156,7 +154,7 @@ public class MMSongs {
     public static final RegistryObject<SoundEvent> LKR = registerSoundEvent("lkr");
     public static final RegistryObject<SoundEvent> TIYS = registerSoundEvent("tiys");
     public static final RegistryObject<SoundEvent> INSANE = registerSoundEvent("insane");
-    public static final RegistryObject<SoundEvent> LOTS = registerSoundEvent("lots");
+    public static final RegistryObject<SoundEvent> MAKE_ME_FAMOUS = registerSoundEvent("make_me_famous");
     public static final RegistryObject<SoundEvent> DDYD = registerSoundEvent("ddyd");
     public static final RegistryObject<SoundEvent> AFTERLIFE = registerSoundEvent("afterlife");
     public static final RegistryObject<SoundEvent> MOTHERS_LOVE = registerSoundEvent("mothers_love");
@@ -166,10 +164,18 @@ public class MMSongs {
     public static final RegistryObject<SoundEvent> STEPBACK = registerSoundEvent("stepback");
     public static final RegistryObject<SoundEvent> LOSER_BABY = registerSoundEvent("loser_baby");
     public static final RegistryObject<SoundEvent> TOO_CLOSE = registerSoundEvent("too_close");
+    public static final RegistryObject<SoundEvent> IM_SANE = registerSoundEvent("im_sane");
+    public static final RegistryObject<SoundEvent> DJBCD = registerSoundEvent("djbcd");
+    public static final RegistryObject<SoundEvent> EIDOLON_STEP = registerSoundEvent("eidolon_step");
+    public static final RegistryObject<SoundEvent> ADC = registerSoundEvent("adc");
+    public static final RegistryObject<SoundEvent> SUNSET_BREAKFAST = registerSoundEvent("sunset_breakfast");
+    public static final RegistryObject<SoundEvent> CATS_ON_MARS = registerSoundEvent("cats_on_mars");
+    public static final RegistryObject<SoundEvent> A_REALITYS_GRAVE = registerSoundEvent("a_realitys_grave");
 
     // Extra Sounds
     public static final RegistryObject<SoundEvent> DANBREAD = registerSoundEvent("danbread");
     public static final RegistryObject<SoundEvent> THEBEAST = registerSoundEvent("thebeast");
+
 
 
     public static final RegistryObject<SoundEvent> ROME_REACTION = registerSoundEvent("rome_reaction");

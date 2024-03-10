@@ -11,13 +11,5 @@ public class MMBlockmanQueue {
         Boolean check = MMGlobals.Accessor.getIsQueued(en);
 
         MMGlobals.Accessor.setIsQueued(en, !check);
-
-        MMDebugLogging.debugS(String.valueOf(!check));
-
-        if (check) {
-            // Inactive button images
-        } else {
-            // Active button images
-        }
     }
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "maxs_mixtapes:item/amazing_digital_circus_main_theme"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "maxs_mixtapes:cassette_fnaf_1"
+      "item": "maxs_mixtapes:cassette_fnaf"
     },
     "title": {
       "translate": "advancements.mm.adv_fnaf"
@@ -22,11 +22,6 @@
           {
             "items": [
               "maxs_mixtapes:cassette_fnaf_1"
-            ]
-          },
-          {
-            "items": [
-              "maxs_mixtapes:cassette_parasite"
             ]
           },
           {

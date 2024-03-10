@@ -3,6 +3,7 @@ package com.m4x4.mixtapes.client.gui;
 import com.m4x4.mixtapes.functions.handlers.MMBlockmanStoreSlots;
 import com.m4x4.mixtapes.maxs_mixtapes;
 import com.m4x4.mixtapes.network.MMBlockmanMessage;
+import com.m4x4.mixtapes.network.MMGlobals;
 import com.m4x4.mixtapes.world.inventory.MMBlockmanMenu;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -25,8 +26,10 @@ public class MMBlockmanScreen extends AbstractContainerScreen<MMBlockmanMenu> {
 	private final Player entity;
 	ImageButton imagebutton_new_play_button;
 	ImageButton imagebutton_new_stop;
-	ImageButton imagebutton_loop_neutral;
-	ImageButton imagebutton_queue_neutral;
+	ImageButton imagebutton_loop_off;
+	//ImageButton imagebutton_queue_off;
+	ImageButton imagebutton_loop_on;
+	//ImageButton imagebutton_queue_on;
 
 	public MMBlockmanScreen(MMBlockmanMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -119,27 +122,73 @@ public class MMBlockmanScreen extends AbstractContainerScreen<MMBlockmanMenu> {
         });
 		guistate.put("button:imagebutton_new_stop", imagebutton_new_stop);
 		this.addRenderableWidget(imagebutton_new_stop);
-
-		imagebutton_loop_neutral = new ImageButton(this.leftPos + 115, this.topPos + 45, 16, 16, 0, 0, 16, new ResourceLocation("maxs_mixtapes:textures/screens/atlas/imagebutton_loop_neutral.png"), 16, 32, e -> {
+		// loop pos w/queue is 115/1115
+		imagebutton_loop_off = new ImageButton(this.leftPos + 124, this.topPos + 45, 16, 16, 0, 0, 16, new ResourceLocation("maxs_mixtapes:textures/screens/atlas/imagebutton_loop_inactive.png"), 16, 32, e -> {
             maxs_mixtapes.PACKET_HANDLER.sendToServer(new MMBlockmanMessage(2, x, y, z));
+			imagebutton_loop_off.setPosition(this.leftPos + 1124, imagebutton_loop_off.y);
+			imagebutton_loop_on.setPosition(this.leftPos + 124, imagebutton_loop_on.y);
             try {
                 MMBlockmanMessage.handleButtonAction(entity, 2, x, y, z);
             } catch (InterruptedException ex) {
                 throw new RuntimeException(ex);
             }
         });
-		guistate.put("button:imagebutton_loop_neutral", imagebutton_loop_neutral);
-		this.addRenderableWidget(imagebutton_loop_neutral);
+		guistate.put("button:imagebutton_loop_off", imagebutton_loop_off);
+		this.addRenderableWidget(imagebutton_loop_off);
 		
-		imagebutton_queue_neutral = new ImageButton(this.leftPos + 133, this.topPos + 45, 16, 16, 0, 0, 16, new ResourceLocation("maxs_mixtapes:textures/screens/atlas/imagebutton_queue_neutral.png"), 16, 32, e -> {
-            maxs_mixtapes.PACKET_HANDLER.sendToServer(new MMBlockmanMessage(3, x, y, z));
-            try {
-                MMBlockmanMessage.handleButtonAction(entity, 3, x, y, z);
-            } catch (InterruptedException ex) {
-                throw new RuntimeException(ex);
-            }
-        });
-		guistate.put("button:imagebutton_queue_neutral", imagebutton_queue_neutral);
-		this.addRenderableWidget(imagebutton_queue_neutral);
+//		imagebutton_queue_off = new ImageButton(this.leftPos + 133, this.topPos + 45, 16, 16, 0, 0, 16, new ResourceLocation("maxs_mixtapes:textures/screens/atlas/imagebutton_queue_inactive.png"), 16, 32, e -> {
+//            maxs_mixtapes.PACKET_HANDLER.sendToServer(new MMBlockmanMessage(3, x, y, z));
+//			imagebutton_queue_off.setPosition(this.leftPos + 1133, imagebutton_queue_off.y);
+//			imagebutton_queue_on.setPosition(this.leftPos + 133, imagebutton_queue_on.y);
+//            try {
+//                MMBlockmanMessage.handleButtonAction(entity, 3, x, y, z);
+//            } catch (InterruptedException ex) {
+//                throw new RuntimeException(ex);
+//            }
+//        });
+//		guistate.put("button:imagebutton_queue_off", imagebutton_queue_off);
+//		this.addRenderableWidget(imagebutton_queue_off);
+
+		imagebutton_loop_on = new ImageButton(this.leftPos + 1124, this.topPos + 45, 16, 16, 0, 0, 16, new ResourceLocation("maxs_mixtapes:textures/screens/atlas/imagebutton_loop_active.png"), 16, 32, e -> {
+			maxs_mixtapes.PACKET_HANDLER.sendToServer(new MMBlockmanMessage(2, x, y, z));
+			imagebutton_loop_off.setPosition(this.leftPos + 124, imagebutton_loop_off.y);
+			imagebutton_loop_on.setPosition(this.leftPos + 1124, imagebutton_loop_on.y);
+			try {
+				MMBlockmanMessage.handleButtonAction(entity, 2, x, y, z);
+			} catch (InterruptedException ex) {
+				throw new RuntimeException(ex);
+			}
+		});
+		guistate.put("button:imagebutton_loop_on", imagebutton_loop_on);
+		this.addRenderableWidget(imagebutton_loop_on);
+
+//		imagebutton_queue_on = new ImageButton(this.leftPos + 1133, this.topPos + 45, 16, 16, 0, 0, 16, new ResourceLocation("maxs_mixtapes:textures/screens/atlas/imagebutton_queue_active.png"), 16, 32, e -> {
+//			maxs_mixtapes.PACKET_HANDLER.sendToServer(new MMBlockmanMessage(3, x, y, z));
+//			imagebutton_queue_off.setPosition(this.leftPos + 133, imagebutton_queue_off.y);
+//			imagebutton_queue_on.setPosition(this.leftPos + 1133, imagebutton_queue_on.y);
+//			try {
+//				MMBlockmanMessage.handleButtonAction(entity, 3, x, y, z);
+//			} catch (InterruptedException ex) {
+//				throw new RuntimeException(ex);
+//			}
+//		});
+//		guistate.put("button:imagebutton_queue_on", imagebutton_queue_on);
+//		this.addRenderableWidget(imagebutton_queue_on);
+
+		if (MMGlobals.Accessor.getIsLooped(entity)) {
+			imagebutton_loop_off.setPosition(this.leftPos + 1124, imagebutton_loop_off.y);
+			imagebutton_loop_on.setPosition(this.leftPos + 124, imagebutton_loop_on.y);
+		} else {
+			imagebutton_loop_off.setPosition(this.leftPos + 124, imagebutton_loop_off.y);
+			imagebutton_loop_on.setPosition(this.leftPos + 1124, imagebutton_loop_on.y);
+		}
+
+//		if (MMGlobals.Accessor.getIsQueued(entity)) {
+//			imagebutton_queue_off.setPosition(this.leftPos + 1133, imagebutton_queue_off.y);
+//			imagebutton_queue_on.setPosition(this.leftPos + 133, imagebutton_queue_on.y);
+//		} else {
+//			imagebutton_queue_off.setPosition(this.leftPos + 133, imagebutton_queue_off.y);
+//			imagebutton_queue_on.setPosition(this.leftPos + 1133, imagebutton_queue_on.y);
+//		}
 	}
 }

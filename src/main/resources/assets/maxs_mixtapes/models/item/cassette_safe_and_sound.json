@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/safe_and_sound"
+    "layer0": "maxs_mixtapes:item/safe_and_sound"
   }
 }

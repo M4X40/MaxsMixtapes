@@ -29,9 +29,6 @@ public class MMBlockmanErroring {
         } else if (Cassette.toString().equals("bread")) {
             song = MMSongs.DANBREAD.get();
             SuccessfulPlay = true;
-        } else if (Cassette == MMItems.airpod.get()) {
-            song = MMSongs.THEBEAST.get();
-            SuccessfulPlay = true;
         } else if (Cassette == MMItems.handsome_devil.get()) {
             song = MMSongs.ROME_REACTION.get();
             SuccessfulPlay = true;
@@ -81,7 +78,7 @@ public class MMBlockmanErroring {
             case 7 -> "<Blockman Speaker> teehee oopsie woopsie that no workie :3c";
             case 8 -> "<Blockman Speaker> I swear to god if you put a piece of bread in here again I'll personally break your pigstep disc.";
             case 9 -> "<Blockman Speaker> Wow this is a secret, good job.";
-            case 10 -> "<Blockman Speaker> " + String.valueOf(DebugSlot);
+            case 10 -> "<Blockman Speaker> " + String.valueOf(DebugSlot) + " | " + String.valueOf(MMBlockmanStoreSlots.getSlot(0));
             default -> "<Blockman Speaker> This should literally be impossible to see, the mod is broken somehow, report this to M4X4";
         };
     }

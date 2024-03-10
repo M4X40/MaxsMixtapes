@@ -2,7 +2,9 @@ package com.m4x4.mixtapes.functions.blockman;
 
 import com.m4x4.mixtapes.functions.handlers.MMBlockmanStoreSlots;
 import com.m4x4.mixtapes.item.MMCassetteItem;
+import com.m4x4.mixtapes.network.MMDebugLogging;
 import com.m4x4.mixtapes.network.MMGlobals;
+import com.m4x4.mixtapes.world.inventory.MMBlockmanMenu;
 import net.minecraft.client.Minecraft;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
@@ -18,6 +20,10 @@ import java.util.function.Supplier;
 
 public class MMBlockmanStop {
     public static void ButtonPressed (Entity en, Player pl) {
+        if (en instanceof Player _plr && _plr.containerMenu instanceof MMBlockmanMenu) {
+            MMBlockmanStoreSlots.retrieveSlots(en);
+        }
+        MMDebugLogging.debugS(MMBlockmanStoreSlots.getSlot(0).toString());
         Item Cassette = MMBlockmanStoreSlots.getSlot(0);
         SoundEvent song;
         if (Cassette.getClass() == MMCassetteItem.class) {
@@ -28,9 +34,9 @@ public class MMBlockmanStop {
             return;
         }
         Minecraft.getInstance().getSoundManager().stop(song.getLocation(), SoundSource.RECORDS);
-        MMGlobals.Accessor.setStopCounter(pl ,MMGlobals.Accessor.getStopCounter(pl) + 1);
-        MMGlobals.Accessor.setSwapAmount(pl, 0);
-        MMGlobals.Accessor.setSwapOnOpen(pl, false);
-
+        MMGlobals.Accessor.setstopCounter(pl ,MMGlobals.Accessor.getstopCounter(pl) + 1);
+        MMGlobals.Accessor.setswapAmount(pl, 0);
+        MMGlobals.Accessor.setswapOnOpen(pl, false);
+        MMDebugLogging.debugS(Cassette + " | " + song);
     }
 }

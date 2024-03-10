@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/djmusicman"
+    "layer0": "maxs_mixtapes:item/dj_music_man"
   }
 }

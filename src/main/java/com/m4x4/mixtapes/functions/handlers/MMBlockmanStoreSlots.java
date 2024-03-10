@@ -1,7 +1,10 @@
 package com.m4x4.mixtapes.functions.handlers;
 
+import com.m4x4.mixtapes.item.MMCassetteItem;
+import com.m4x4.mixtapes.item.MMItems;
 import com.m4x4.mixtapes.maxs_mixtapes;
 import com.m4x4.mixtapes.network.MMGlobals;
+import com.m4x4.mixtapes.sound.MMSongs;
 import com.m4x4.mixtapes.world.inventory.MMBlockmanMenu;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.entity.Entity;
@@ -87,7 +90,15 @@ public class MMBlockmanStoreSlots {
             MMBlockmanErroring.CheckForErrors(Cassette, pl, en, false, false);
             Songs[i] = MMBlockmanErroring.returnSong();
             if (MMBlockmanErroring.returnSong() != null) {
-                SongLengths[i] = ((RecordItem) Cassette).getLengthInTicks();
+                if (Cassette.getClass() == Item.class) {
+                    if (Cassette.toString().equals("bread")) {
+                        SongLengths[i] = 220;
+                    } else if (Cassette == MMItems.handsome_devil.get()) {
+                        SongLengths[i] = 380;
+                    }
+                } else {
+                    SongLengths[i] = ((RecordItem) Cassette).getLengthInTicks();
+                }
             } else {
                 SongLengths[i] = 0;
             }

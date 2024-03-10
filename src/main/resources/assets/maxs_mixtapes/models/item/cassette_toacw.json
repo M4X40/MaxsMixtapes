@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/brimstone_witch"
+    "layer0": "maxs_mixtapes:item/tale_of_a_cruel_world"
   }
 }

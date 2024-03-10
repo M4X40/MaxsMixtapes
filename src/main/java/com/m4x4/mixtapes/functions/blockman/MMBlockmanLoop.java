@@ -13,14 +13,6 @@ public class MMBlockmanLoop {
         Boolean check = MMGlobals.Accessor.getIsLooped(en);
 
         MMGlobals.Accessor.setIsLooped(en, !check);
-
-        MMDebugLogging.debugS(String.valueOf(!check));
-
-        if (check) {
-            // Inactive button images
-        } else {
-            // Active button images
-        }
     }
 }
 
