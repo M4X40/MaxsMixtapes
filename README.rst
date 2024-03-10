@@ -4,7 +4,7 @@ Maxs Mixtapes
 A mod that adds 123 cassette tapes with unique songs, sprites, and features! 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-:Version:           2.3.rewrite
+:Version:           2.3.0
 :MC Version:        1.19.2, 1.20.1
 :Download Page:     Coming Soon
 :Authors:           M4X40, baligaman
