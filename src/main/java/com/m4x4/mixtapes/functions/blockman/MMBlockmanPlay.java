@@ -15,15 +15,15 @@ import com.m4x4.mixtapes.maxs_mixtapes;
 
 public class MMBlockmanPlay {
     public static void ButtonPressed (Entity en, Player pl, Boolean showerrors, int SlotNum) throws InterruptedException {
-        MMBlockmanStop.ButtonPressed(en, pl);
-        MMBlockmanStop.ButtonPressed(en, pl);
-        MMBlockmanStop.ButtonPressed(en, pl);
+        MMBlockmanStop.ButtonPressed(pl);
+        MMBlockmanStop.ButtonPressed(pl);
+        MMBlockmanStop.ButtonPressed(pl);
         int OldStopCount = MMGlobals.Accessor.getstopCounter(pl);
         MMBlockmanStoreSlots.retrieveSlots(en);
         Item Cassette = MMBlockmanStoreSlots.getSlot(SlotNum);
         MMBlockmanErroring.CheckForErrors(Cassette, pl, en, showerrors, true); // Also plays audio
         SoundEvent song = MMBlockmanErroring.returnSong();
-        MMStoreCurrentSong.setCurrentSong(en, song);
+        MMStoreCurrentSong.setCurrentSong(song);
         Boolean SuccessfulPlay = MMBlockmanErroring.returnSuccess();
 
         final int[] SongNum = {0};
@@ -35,15 +35,15 @@ public class MMBlockmanPlay {
         final Boolean[] LoopCheck = {MMGlobals.Accessor.getIsLooped(pl)};
         final Boolean[] QueueCheck = {MMGlobals.Accessor.getIsQueued(pl)};
         int OldStopCount = MMGlobals.Accessor.getstopCounter(pl);
-        final Object lock = new Object();
+        //final Object lock = new Object();
 
         if (SuccessfulPlay && (LoopCheck[0] || QueueCheck[0])) {
             int length = SongLengths[SongNum[0]];
-            maxs_mixtapes.queueServerWork(length + 20, () -> {
+            maxs_mixtapes.queueServerWork(length, () -> {
                 LoopCheck[0] = MMGlobals.Accessor.getIsLooped(pl);
                 QueueCheck[0] = MMGlobals.Accessor.getIsQueued(pl);
                 if (OldStopCount == MMGlobals.Accessor.getstopCounter(pl)) {
-                    MMBlockmanStop.ButtonPressed(en, pl);
+                    MMBlockmanStop.ButtonPressed(pl);
                     if (!QueueCheck[0] && LoopCheck[0]) { // Loop 1
                         if (en instanceof Player _plr ? _plr.containerMenu instanceof MMBlockmanMenu : false) {
                             try {
@@ -130,7 +130,7 @@ public class MMBlockmanPlay {
                 }
             });
         } else {
-            MMBlockmanStop.ButtonPressed(en, pl);
+            MMBlockmanStop.ButtonPressed(pl);
         }
     }
 }

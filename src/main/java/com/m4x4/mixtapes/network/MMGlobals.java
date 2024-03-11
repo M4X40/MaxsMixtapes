@@ -72,6 +72,7 @@ public class MMGlobals {
 			clone.stopCounter = original.stopCounter;
 			clone.swapOnOpen = original.swapOnOpen;
 			clone.swapAmount = original.swapAmount;
+			clone.hasFound = original.hasFound;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -113,6 +114,7 @@ public class MMGlobals {
 		public int stopCounter = 0;
 		public boolean swapOnOpen = false;
 		public int swapAmount = 0;
+		public boolean hasFound = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -126,6 +128,7 @@ public class MMGlobals {
 			nbt.putInt("stopCounter", stopCounter);
 			nbt.putBoolean("swapOnOpen", swapOnOpen);
 			nbt.putInt("swapAmount", swapAmount);
+			nbt.putBoolean("hasFound", hasFound);
 			return nbt;
 		}
 
@@ -136,6 +139,7 @@ public class MMGlobals {
 			stopCounter = nbt.getInt("stopCounter");
 			swapOnOpen = nbt.getBoolean("swapOnOpen");
 			swapAmount = nbt.getInt("swapAmount");
+			hasFound = nbt.getBoolean("hasFound");
 		}
 	}
 
@@ -165,6 +169,7 @@ public class MMGlobals {
 					variables.stopCounter = message.data.stopCounter;
 					variables.swapOnOpen = message.data.swapOnOpen;
 					variables.swapAmount = message.data.swapAmount;
+					variables.hasFound = message.data.hasFound;
 				}
 			});
 			context.setPacketHandled(true);
@@ -218,6 +223,16 @@ public class MMGlobals {
 		public static void setswapAmount(Entity entity, int value) {
 			entity.getCapability(MMGlobals.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.swapAmount = value;
+				capability.syncPlayerVariables(entity);
+			});
+		}
+
+		public static Boolean gethasFound(Entity entity) {
+			return (entity.getCapability(MMGlobals.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).hasFound;
+		}
+		public static void sethasFound(Entity entity, Boolean value) {
+			entity.getCapability(MMGlobals.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.hasFound = value;
 				capability.syncPlayerVariables(entity);
 			});
 		}

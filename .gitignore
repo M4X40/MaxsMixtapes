@@ -16,6 +16,12 @@ out
 # gradle
 build
 .gradle
+build.gradle
+settings.gradle
+BuildJar.bat
+run.bat
+gradlew
+gradlew.bat
 
 # other
 eclipse

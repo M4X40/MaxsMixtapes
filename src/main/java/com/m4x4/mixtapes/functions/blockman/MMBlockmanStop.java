@@ -1,20 +1,15 @@
 package com.m4x4.mixtapes.functions.blockman;
 
 import com.m4x4.mixtapes.functions.handlers.MMStoreCurrentSong;
-import com.m4x4.mixtapes.network.MMDebugLogging;
 import com.m4x4.mixtapes.network.MMGlobals;
 import net.minecraft.client.Minecraft;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 
 public class MMBlockmanStop {
-    public static void ButtonPressed (Entity en, Player pl) {
-        SoundEvent song = MMStoreCurrentSong.getCurrentSong(en);
-        try {
-            MMDebugLogging.debugS(song.toString());
-        } catch (Exception ignored) {}
+    public static void ButtonPressed (Player pl) {
+        SoundEvent song = MMStoreCurrentSong.getCurrentSong();
 
         if (song != null) {
             Minecraft.getInstance().getSoundManager().stop(song.getLocation(), SoundSource.RECORDS);
