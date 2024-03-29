@@ -1,9 +1,10 @@
 package com.m4x4.mixtapes.network;
 
 import com.m4x4.mixtapes.functions.blockman.MMBlockmanPlay;
+import com.m4x4.mixtapes.functions.handlers.MMStoreCurrentSong;
 import com.m4x4.mixtapes.maxs_mixtapes;
-import net.minecraft.client.Minecraft;
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraftforge.network.NetworkEvent;
 import net.minecraftforge.network.PacketDistributor;
 
@@ -36,8 +37,12 @@ public class MMPacket {
     public static void handlePacket(MMPacket msg, Supplier<NetworkEvent.Context> ctx) {
         if (Objects.equals(msg.data, "loop")) {
             MMDebugLogging.debugS("Copper received");
+            SoundEvent OldSong = MMStoreCurrentSong.getCurrentSong();
             maxs_mixtapes.queueServerWork(msg.data2, () -> {
-                MMPacketHandler.INSTANCE.send(PacketDistributor.PLAYER.with(() -> ctx.get().getSender()), new MMPacket("loopc", 0));
+                if (OldSong == MMStoreCurrentSong.getCurrentSong()) {
+                    MMDebugLogging.debugS(msg.data2 + "aaab");
+                    MMPacketHandler.INSTANCE.send(PacketDistributor.PLAYER.with(() -> ctx.get().getSender()), new MMPacket("loopc", 0));
+                }
             });
         } else if (Objects.equals(msg.data, "loopc")) {
             MMBlockmanPlay.Loop();

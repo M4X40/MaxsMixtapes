@@ -30,6 +30,9 @@ public class MMBlockmanPlay {
 
     public static void ButtonPressed (Entity en, Player pl, Boolean showerrors, int SlotNum) throws InterruptedException {
         MMBlockmanStop.ButtonPressed(pl);
+        MMBlockmanStop.ButtonPressed(pl);
+        MMBlockmanStop.ButtonPressed(pl);
+        params.clear();
         int OldStopCount = MMGlobals.Accessor.getstopCounter(pl);
         MMBlockmanStoreSlots.retrieveSlots(en);
         Item Cassette = MMBlockmanStoreSlots.getSlot(SlotNum);
@@ -46,53 +49,40 @@ public class MMBlockmanPlay {
     public static void LoopCycle(Entity en, Player pl, Boolean SuccessfulPlay, SoundEvent[] Songs, int[] SongNum, int[] SongLengths) {
         final Boolean[] LoopCheck = {MMGlobals.Accessor.getIsLooped(pl)};
         MMDebugLogging.debugS(String.valueOf(LoopCheck[0]));
-        final Boolean[] QueueCheck = {MMGlobals.Accessor.getIsQueued(pl)};
         int OldStopCount = MMGlobals.Accessor.getstopCounter(pl);
         //final Object lock = new Object();
 
-        if (SuccessfulPlay && (LoopCheck[0] || QueueCheck[0])) {
+        if (SuccessfulPlay && (LoopCheck[0])) {
             int length = SongLengths[SongNum[0]];
-            MMDebugLogging.debugS("Started wait");
+            params.clear();
             params.clear();
             params.add(en);
             params.add(pl);
             params.add(Songs);
             params.add(SongNum);
             params.add(SongLengths);
-            MMDebugLogging.debugS(String.valueOf(params.size()) + "bbb");
-            if (Minecraft.getInstance().getCurrentServer() == null) {
-                MMDebugLogging.debugS("So we're in bronze");
-                maxs_mixtapes.queueServerWork(length, () -> {
-                    Loop();
-                });
-            } else {
-                MMDebugLogging.debugS("So we're in copper");
-                MMPacketHandler.INSTANCE.sendToServer(new MMPacket("loop", length));
-            }
+            params.add(OldStopCount);
+            MMPacketHandler.INSTANCE.sendToServer(new MMPacket("loop", MMBlockmanStoreSlots.getSongLengths(en, pl)[0]));
         } else {
             MMBlockmanStop.ButtonPressed(pl);
         }
     }
 
     public static void Loop() {
-        MMDebugLogging.debugS(String.valueOf(params.size()) + "ccc");
         params = returnParams();
-        MMDebugLogging.debugS(String.valueOf(params.size()) + "ddd");
         Entity en = (Entity) params.get(0);
+        MMDebugLogging.debugS(String.valueOf(en));
         Player pl = (Player) params.get(1);
         SoundEvent[] Songs = (SoundEvent[]) params.get(2);
         int[] SongNum = (int[]) params.get(3);
         int[] SongLengths = (int[]) params.get(4);
         final Boolean[] LoopCheck = {MMGlobals.Accessor.getIsLooped(pl)};
-        final Boolean[] QueueCheck = {MMGlobals.Accessor.getIsQueued(pl)};
-        int OldStopCount = MMGlobals.Accessor.getstopCounter(pl);
-        MMDebugLogging.debugS("Wait Over");
+        int OldStopCount = (int) params.get(5);
         LoopCheck[0] = MMGlobals.Accessor.getIsLooped(pl);
         //QueueCheck[0] = MMGlobals.Accessor.getIsQueued(pl);
-        MMDebugLogging.debugS(String.valueOf(LoopCheck[0]) + "aaaa");
         if (OldStopCount == MMGlobals.Accessor.getstopCounter(pl)) {
             MMBlockmanStop.ButtonPressed(pl);
-            if (!QueueCheck[0] && LoopCheck[0]) { // Loop 1
+            if (LoopCheck[0]) { // Loop 1
                 if (en instanceof Player _plr ? _plr.containerMenu instanceof MMBlockmanMenu : false) {
                     try {
                         ButtonPressed(en, pl, true, 0);
