@@ -1,6 +1,5 @@
 package com.m4x4.mixtapes.network;
 
-import net.minecraft.sounds.SoundEvent;
 import net.minecraftforge.network.PacketDistributor;
 import net.minecraftforge.network.NetworkEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -177,7 +176,7 @@ public class MMGlobals {
 	}
 
 	public static class Accessor {
-		public static Boolean getIsLooped(Entity entity) {
+		public static boolean getIsLooped(Entity entity) {
 			return (entity.getCapability(MMGlobals.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MMGlobals.PlayerVariables())).isLooped;
 		}
 		public static void setIsLooped(Entity entity, Boolean value) {

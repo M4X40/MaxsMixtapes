@@ -1294,5 +1294,21 @@
         "stream": true
       }
     ]
+  },
+  "awibfy": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:a_world_i_build_for_you_kinitopet_ost",
+        "stream": true
+      }
+    ]
+  },
+  "mbil": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:my_burden_is_light_-_oneshot_ost",
+        "stream": true
+      }
+    ]
   }
 }

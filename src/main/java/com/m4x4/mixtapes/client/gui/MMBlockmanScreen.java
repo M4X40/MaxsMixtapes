@@ -1,8 +1,8 @@
 package com.m4x4.mixtapes.client.gui;
 
+import com.m4x4.mixtapes.functions.blockman.MMBlockmanPlay;
+import com.m4x4.mixtapes.functions.blockman.MMBlockmanStop;
 import com.m4x4.mixtapes.functions.handlers.MMBlockmanStoreSlots;
-import com.m4x4.mixtapes.maxs_mixtapes;
-import com.m4x4.mixtapes.network.MMBlockmanMessage;
 import com.m4x4.mixtapes.network.MMGlobals;
 import com.m4x4.mixtapes.world.inventory.MMBlockmanMenu;
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -42,7 +42,7 @@ public class MMBlockmanScreen extends AbstractContainerScreen<MMBlockmanMenu> {
 		this.imageHeight = 234;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("maxs_mixtapes:textures/screens/mm_blockman_menu.png");
+	private static final ResourceLocation texture = new ResourceLocation("maxs_mixtapes:textures/screens/mm_blockman_menu_light.png");
 
 	@Override
 	public void render(@NotNull PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -58,10 +58,8 @@ public class MMBlockmanScreen extends AbstractContainerScreen<MMBlockmanMenu> {
 		RenderSystem.defaultBlendFunc();
 		RenderSystem.setShaderTexture(0, texture);
 		blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-
 		RenderSystem.setShaderTexture(0, new ResourceLocation("maxs_mixtapes:textures/screens/temp_walkman_2_gui.png"));
 		blit(ms, this.leftPos + -2, this.topPos + 18, 0, 0, 64, 64, 64, 64);
-
 		RenderSystem.disableBlend();
 	}
 
@@ -73,6 +71,24 @@ public class MMBlockmanScreen extends AbstractContainerScreen<MMBlockmanMenu> {
 			MMBlockmanStoreSlots.retrieveSlots(this.minecraft.player);
             this.minecraft.player.closeContainer();
 			return true;
+		} else if (key == 80) {
+            try {
+                MMBlockmanPlay.ButtonPressed(this.entity, this.entity, true, 0);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        } else if (key == 83) {
+			MMBlockmanStop.ButtonPressed(this.entity);
+		} else if (key == 76) {
+			if (MMGlobals.Accessor.getIsLooped(entity)) {
+				MMGlobals.Accessor.setIsLooped(entity, false);
+				imagebutton_loop_off.setPosition(this.leftPos + 1124, imagebutton_loop_off.y);
+				imagebutton_loop_on.setPosition(this.leftPos + 124, imagebutton_loop_on.y);
+			} else {
+				MMGlobals.Accessor.setIsLooped(entity, true);
+				imagebutton_loop_off.setPosition(this.leftPos + 124, imagebutton_loop_off.y);
+				imagebutton_loop_on.setPosition(this.leftPos + 1124, imagebutton_loop_on.y);
+			}
 		}
 		return super.keyPressed(key, b, c);
 	}
@@ -102,9 +118,8 @@ public class MMBlockmanScreen extends AbstractContainerScreen<MMBlockmanMenu> {
         this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
 
 		imagebutton_new_play_button = new ImageButton(this.leftPos + 115, this.topPos + 27, 16, 16, 0, 0, 16, new ResourceLocation("maxs_mixtapes:textures/screens/atlas/imagebutton_new_play_button.png"), 16, 32, e -> {
-			maxs_mixtapes.PACKET_HANDLER.sendToServer(new MMBlockmanMessage(0, x, y, z));
             try {
-                MMBlockmanMessage.handleButtonAction(entity, 0, x, y, z);
+                MMBlockmanPlay.ButtonPressed(entity, entity, true, 0);
             } catch (InterruptedException ex) {
                 throw new RuntimeException(ex);
             }
@@ -113,64 +128,39 @@ public class MMBlockmanScreen extends AbstractContainerScreen<MMBlockmanMenu> {
 		this.addRenderableWidget(imagebutton_new_play_button);
 
 		imagebutton_new_stop = new ImageButton(this.leftPos + 133, this.topPos + 27, 16, 16, 0, 0, 16, new ResourceLocation("maxs_mixtapes:textures/screens/atlas/imagebutton_new_stop.png"), 16, 32, e -> {
-            maxs_mixtapes.PACKET_HANDLER.sendToServer(new MMBlockmanMessage(1, x, y, z));
-            try {
-                MMBlockmanMessage.handleButtonAction(entity, 1, x, y, z);
-            } catch (InterruptedException ex) {
-                throw new RuntimeException(ex);
-            }
+			MMBlockmanStop.ButtonPressed(entity);
         });
 		guistate.put("button:imagebutton_new_stop", imagebutton_new_stop);
 		this.addRenderableWidget(imagebutton_new_stop);
 		// loop pos w/queue is 115/1115
 		imagebutton_loop_off = new ImageButton(this.leftPos + 124, this.topPos + 45, 16, 16, 0, 0, 16, new ResourceLocation("maxs_mixtapes:textures/screens/atlas/imagebutton_loop_inactive.png"), 16, 32, e -> {
-            maxs_mixtapes.PACKET_HANDLER.sendToServer(new MMBlockmanMessage(2, x, y, z));
+			MMGlobals.Accessor.setIsLooped(entity, true);
 			imagebutton_loop_off.setPosition(this.leftPos + 1124, imagebutton_loop_off.y);
 			imagebutton_loop_on.setPosition(this.leftPos + 124, imagebutton_loop_on.y);
-            try {
-                MMBlockmanMessage.handleButtonAction(entity, 2, x, y, z);
-            } catch (InterruptedException ex) {
-                throw new RuntimeException(ex);
-            }
         });
 		guistate.put("button:imagebutton_loop_off", imagebutton_loop_off);
 		this.addRenderableWidget(imagebutton_loop_off);
 		
 //		imagebutton_queue_off = new ImageButton(this.leftPos + 133, this.topPos + 45, 16, 16, 0, 0, 16, new ResourceLocation("maxs_mixtapes:textures/screens/atlas/imagebutton_queue_inactive.png"), 16, 32, e -> {
-//            maxs_mixtapes.PACKET_HANDLER.sendToServer(new MMBlockmanMessage(3, x, y, z));
+//          MMBlockmanQueue.ButtonPressed(entity, entity);
 //			imagebutton_queue_off.setPosition(this.leftPos + 1133, imagebutton_queue_off.y);
 //			imagebutton_queue_on.setPosition(this.leftPos + 133, imagebutton_queue_on.y);
-//            try {
-//                MMBlockmanMessage.handleButtonAction(entity, 3, x, y, z);
-//            } catch (InterruptedException ex) {
-//                throw new RuntimeException(ex);
-//            }
 //        });
 //		guistate.put("button:imagebutton_queue_off", imagebutton_queue_off);
 //		this.addRenderableWidget(imagebutton_queue_off);
 
 		imagebutton_loop_on = new ImageButton(this.leftPos + 1124, this.topPos + 45, 16, 16, 0, 0, 16, new ResourceLocation("maxs_mixtapes:textures/screens/atlas/imagebutton_loop_active.png"), 16, 32, e -> {
-			maxs_mixtapes.PACKET_HANDLER.sendToServer(new MMBlockmanMessage(2, x, y, z));
+			MMGlobals.Accessor.setIsLooped(entity, false);
 			imagebutton_loop_off.setPosition(this.leftPos + 124, imagebutton_loop_off.y);
 			imagebutton_loop_on.setPosition(this.leftPos + 1124, imagebutton_loop_on.y);
-			try {
-				MMBlockmanMessage.handleButtonAction(entity, 2, x, y, z);
-			} catch (InterruptedException ex) {
-				throw new RuntimeException(ex);
-			}
 		});
 		guistate.put("button:imagebutton_loop_on", imagebutton_loop_on);
 		this.addRenderableWidget(imagebutton_loop_on);
 
 //		imagebutton_queue_on = new ImageButton(this.leftPos + 1133, this.topPos + 45, 16, 16, 0, 0, 16, new ResourceLocation("maxs_mixtapes:textures/screens/atlas/imagebutton_queue_active.png"), 16, 32, e -> {
-//			maxs_mixtapes.PACKET_HANDLER.sendToServer(new MMBlockmanMessage(3, x, y, z));
+//			MMBlockmanQueue.ButtonPressed(entity, entity);
 //			imagebutton_queue_off.setPosition(this.leftPos + 133, imagebutton_queue_off.y);
 //			imagebutton_queue_on.setPosition(this.leftPos + 1133, imagebutton_queue_on.y);
-//			try {
-//				MMBlockmanMessage.handleButtonAction(entity, 3, x, y, z);
-//			} catch (InterruptedException ex) {
-//				throw new RuntimeException(ex);
-//			}
 //		});
 //		guistate.put("button:imagebutton_queue_on", imagebutton_queue_on);
 //		this.addRenderableWidget(imagebutton_queue_on);
@@ -191,4 +181,7 @@ public class MMBlockmanScreen extends AbstractContainerScreen<MMBlockmanMenu> {
 //			imagebutton_queue_on.setPosition(this.leftPos + 1133, imagebutton_queue_on.y);
 //		}
 	}
+
+
+
 }

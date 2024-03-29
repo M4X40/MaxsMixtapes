@@ -2,6 +2,7 @@ package com.m4x4.mixtapes;
 
 import com.m4x4.mixtapes.init.MMMenus;
 import com.m4x4.mixtapes.item.MMItems;
+import com.m4x4.mixtapes.network.MMPacketHandler;
 import com.m4x4.mixtapes.sound.MMSongs;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -79,7 +80,7 @@ public class maxs_mixtapes {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        MMPacketHandler.register();
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
@@ -90,6 +91,7 @@ public class maxs_mixtapes {
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             // Some client setup code
+
             LOGGER.info("Max's Mixtapes Loaded! User >> {}", Minecraft.getInstance().getUser().getName());
         }
     }

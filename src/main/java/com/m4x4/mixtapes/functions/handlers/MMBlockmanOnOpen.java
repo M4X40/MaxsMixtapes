@@ -9,20 +9,20 @@ import net.minecraft.world.entity.player.Player;
 
 public class MMBlockmanOnOpen {
     public static void BlockmanOnOpen(Entity en) {
-//        MMDebugLogging.debugS("Opened Blockman | " + MMGlobals.Accessor.getswapOnOpen(en));
-//        maxs_mixtapes.queueServerWork(40, () -> {
-//            MMDebugLogging.debugS(String.valueOf(MMGlobals.Accessor.getswapOnOpen(en)));
-//            if (MMGlobals.Accessor.getswapOnOpen(en)) {
-//                for (int i = 0; i < MMGlobals.Accessor.getswapAmount(en); i++) {
-//                    MMBlockmanStoreSlots.retrieveSlots(en);
-//                    MMBlockmanQueueHandler.SwapSlots(en);
-//                    MMDebugLogging.debugS(String.valueOf(i));
-//                }
-//                MMGlobals.Accessor.setswapOnOpen(en, false);
-//                MMGlobals.Accessor.setswapAmount(en, 0);
-//            } else {
-//                MMDebugLogging.debugS("Didnt work dumbass | " + MMGlobals.Accessor.getswapOnOpen(en));
-//            }
-//        });
+        MMDebugLogging.debugS("Opened Blockman | " + MMGlobals.Accessor.getswapOnOpen(en));
+        maxs_mixtapes.queueServerWork(40, () -> {
+            MMDebugLogging.debugS(String.valueOf(MMGlobals.Accessor.getswapOnOpen(en)));
+            if (MMGlobals.Accessor.getswapOnOpen(en)) {
+                for (int i = 0; i < MMGlobals.Accessor.getswapAmount(en); i++) {
+                    MMBlockmanStoreSlots.retrieveSlots(en);
+                    MMBlockmanQueueHandler.SwapSlots(en);
+                    MMDebugLogging.debugS(String.valueOf(i));
+                }
+                MMGlobals.Accessor.setswapOnOpen(en, false);
+                MMGlobals.Accessor.setswapAmount(en, 0);
+            } else {
+                MMDebugLogging.debugS("Didnt work dumbass | " + MMGlobals.Accessor.getswapOnOpen(en));
+            }
+        });
     }
 }

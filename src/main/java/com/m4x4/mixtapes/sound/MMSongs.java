@@ -177,6 +177,8 @@ public class MMSongs {
     public static final RegistryObject<SoundEvent> THEBEAST = registerSoundEvent("thebeast");
 
 
+    public static final RegistryObject<SoundEvent> AWIBFY = registerSoundEvent("awibfy");
+    public static final RegistryObject<SoundEvent> MBIL = registerSoundEvent("mbil");
 
     public static final RegistryObject<SoundEvent> ROME_REACTION = registerSoundEvent("rome_reaction");
     // Add Registry above

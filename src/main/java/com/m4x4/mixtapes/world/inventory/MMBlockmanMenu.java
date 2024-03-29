@@ -3,7 +3,6 @@ package com.m4x4.mixtapes.world.inventory;
 
 import com.m4x4.mixtapes.functions.handlers.MMBlockmanOnOpen;
 import com.m4x4.mixtapes.functions.handlers.MMBlockmanStoreSlots;
-import net.minecraft.client.Minecraft;
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
@@ -117,8 +116,9 @@ public class MMBlockmanMenu extends AbstractContainerMenu implements Supplier<Ma
 		for (int si = 0; si < 9; ++si)
 			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 34 + 142));
 
-		MMBlockmanStoreSlots.retrieveSlots(Minecraft.getInstance().player);
-		MMBlockmanOnOpen.BlockmanOnOpen(Minecraft.getInstance().player);
+		MMBlockmanStoreSlots.retrieveSlots(entity);
+
+		//MMBlockmanOnOpen.BlockmanOnOpen(Minecraft.getInstance().player);
 	}
 
 	@Override

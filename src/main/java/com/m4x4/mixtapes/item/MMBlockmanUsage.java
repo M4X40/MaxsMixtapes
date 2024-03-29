@@ -5,8 +5,8 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
-import org.jetbrains.annotations.NotNull;
 import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.common.capabilities.ICapabilityProvider;
@@ -26,6 +26,9 @@ import io.netty.buffer.Unpooled;
 
 import com.m4x4.mixtapes.world.inventory.MMBlockmanMenu;
 import com.m4x4.mixtapes.item.inventory.BlockmanInventoryCapability;
+import org.jetbrains.annotations.NotNull;
+
+import java.util.List;
 
 public class MMBlockmanUsage extends Item {
     public MMBlockmanUsage(Properties properties) {
@@ -57,6 +60,7 @@ public class MMBlockmanUsage extends Item {
         return ar;
     }
 
+
     @Override
     public ICapabilityProvider initCapabilities(ItemStack stack, @Nullable CompoundTag compound) {
         return new BlockmanInventoryCapability();
@@ -74,5 +78,10 @@ public class MMBlockmanUsage extends Item {
         super.readShareTag(stack, nbt);
         if (nbt != null)
             stack.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> ((ItemStackHandler) capability).deserializeNBT((CompoundTag) nbt.get("Inventory")));
+    }
+
+    public void appendHoverText(@NotNull ItemStack itemstack, Level world, @NotNull List<Component> list, @NotNull TooltipFlag flag) {
+        super.appendHoverText(itemstack, world, list, flag);
+        list.add(Component.literal("I'll never forgive the Japanese! Then again, they make some rather nifty gadgets."));
     }
 }
