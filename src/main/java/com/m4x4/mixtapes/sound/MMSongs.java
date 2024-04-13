@@ -1,7 +1,6 @@
 package com.m4x4.mixtapes.sound;
 
 import com.m4x4.mixtapes.maxs_mixtapes;
-import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -179,6 +178,8 @@ public class MMSongs {
 
     public static final RegistryObject<SoundEvent> AWIBFY = registerSoundEvent("awibfy");
     public static final RegistryObject<SoundEvent> MBIL = registerSoundEvent("mbil");
+    public static final RegistryObject<SoundEvent> CAGE_MANSION = registerSoundEvent("cage_mansion");
+    public static final RegistryObject<SoundEvent> LOTS = registerSoundEvent("lots");
 
     public static final RegistryObject<SoundEvent> ROME_REACTION = registerSoundEvent("rome_reaction");
     // Add Registry above

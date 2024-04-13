@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "maxs_mixtapes:cassette_slime_god"
+      "item": "maxs_mixtapes:cassette_universal_collapse"
     },
     "title": {
       "translate": "advancements.mm.adv_calamity"
@@ -14,8 +14,9 @@
     "announce_to_chat": true,
     "hidden": false
   },
+  "parent": "maxs_mixtapes:adv_blank_slate",
   "criteria": {
-    "requirement": {
+    "maxs_mixtapes:cassette_toacw": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -23,22 +24,50 @@
             "items": [
               "maxs_mixtapes:cassette_toacw"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_slime_god": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_slime_god"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_scourge": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_scourge"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_universal_collapse": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_universal_collapse"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_jungle_dragon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_jungle_dragon"
@@ -48,11 +77,27 @@
       }
     }
   },
+  "requirements": [
+    [
+      "maxs_mixtapes:cassette_toacw"
+    ],
+    [
+      "maxs_mixtapes:cassette_slime_god"
+    ],
+    [
+      "maxs_mixtapes:cassette_scourge"
+    ],
+    [
+      "maxs_mixtapes:cassette_universal_collapse"
+    ],
+    [
+      "maxs_mixtapes:cassette_jungle_dragon"
+    ]
+  ],
   "rewards": {
-    "experience": 0,
     "loot": [
       "maxs_mixtapes:entities/ltcalamity"
-    ]
-  },
-  "parent": "maxs_mixtapes:adv_init"
+    ],
+    "experience": 0
+  }
 }

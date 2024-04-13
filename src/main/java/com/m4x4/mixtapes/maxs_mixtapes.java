@@ -36,7 +36,7 @@ import java.util.function.Supplier;
 public class maxs_mixtapes {
     public static final String MODID = "maxs_mixtapes";
     public static final Logger LOGGER = LogUtils.getLogger();
-    public static Boolean DebugMode = true;
+    public static final Boolean DebugMode = false;
 
     public maxs_mixtapes()
     {

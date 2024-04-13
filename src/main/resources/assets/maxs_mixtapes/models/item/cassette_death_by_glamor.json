@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/mettaton"
+    "layer0": "maxs_mixtapes:item/death_by_glamour"
   }
 }

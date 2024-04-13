@@ -15,7 +15,7 @@
     "hidden": true
   },
   "criteria": {
-    "requirement": {
+    "maxs_mixtapes:cassette_letter_to_my_brother": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -23,26 +23,51 @@
             "items": [
               "maxs_mixtapes:cassette_letter_to_my_brother"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_after_dark": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_after_dark"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_monster": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
-              "maxs_mixtapes:cassette_monster"
+              "maxs_mixtapes:cassette_max"
             ]
           }
         ]
       }
     }
   },
+  "requirements": [
+    [
+      "maxs_mixtapes:cassette_letter_to_my_brother"
+    ],
+    [
+      "maxs_mixtapes:cassette_after_dark"
+    ],
+    [
+      "maxs_mixtapes:cassette_monster"
+    ]
+  ],
   "rewards": {
     "experience": 0,
     "loot": [
       "maxs_mixtapes:entities/ltrome"
     ]
   },
-  "parent": "maxs_mixtapes:adv_init"
+  "parent": "maxs_mixtapes:adv_blank_slate"
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/jungle_dragon"
+    "layer0": "maxs_mixtapes:item/roar_of_the_jungle_dragon"
   }
 }

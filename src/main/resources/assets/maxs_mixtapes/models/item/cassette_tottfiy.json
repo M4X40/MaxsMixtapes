@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/doomslayer"
+    "layer0": "maxs_mixtapes:item/the_only_thing_they_fear_is_you"
   }
 }

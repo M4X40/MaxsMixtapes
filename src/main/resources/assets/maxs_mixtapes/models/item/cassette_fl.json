@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/blue_baby"
+    "layer0": "maxs_mixtapes:item/forgotten_lullaby"
   }
 }

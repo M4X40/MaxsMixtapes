@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/pikachu"
+    "layer0": "maxs_mixtapes:item/gym_leader_battle"
   }
 }

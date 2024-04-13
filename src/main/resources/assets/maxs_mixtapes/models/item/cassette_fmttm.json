@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/weast"
+    "layer0": "maxs_mixtapes:item/fly_me_to_the_moon"
   }
 }

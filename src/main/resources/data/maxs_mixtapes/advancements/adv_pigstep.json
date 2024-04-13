@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "requirement": {
+    "maxs_mixtapes:cassette_pigstep": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -23,7 +23,14 @@
             "items": [
               "maxs_mixtapes:cassette_pigstep"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_pigstep_jazz": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_pigstep_jazz"
@@ -33,11 +40,19 @@
       }
     }
   },
+  "requirements": [
+    [
+      "maxs_mixtapes:cassette_pigstep"
+    ],
+    [
+      "maxs_mixtapes:cassette_pigstep_jazz"
+    ]
+  ],
   "rewards": {
     "experience": 0,
     "loot": [
       "maxs_mixtapes:entities/ltpig"
     ]
   },
-  "parent": "maxs_mixtapes:adv_init"
+  "parent": "maxs_mixtapes:adv_blank_slate"
 }

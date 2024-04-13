@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/the_slime_god"
+    "layer0": "maxs_mixtapes:item/return_to_slime"
   }
 }

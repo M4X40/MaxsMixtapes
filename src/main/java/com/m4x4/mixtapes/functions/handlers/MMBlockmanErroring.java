@@ -3,6 +3,7 @@ package com.m4x4.mixtapes.functions.handlers;
 import com.m4x4.mixtapes.item.MMCassetteItem;
 import com.m4x4.mixtapes.item.MMItems;
 import com.m4x4.mixtapes.maxs_mixtapes;
+import com.m4x4.mixtapes.network.MMDebugLogging;
 import com.m4x4.mixtapes.network.MMGlobals;
 import com.m4x4.mixtapes.sound.MMSongs;
 import com.m4x4.mixtapes.sound.soundPlayer;
@@ -15,6 +16,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.RecordItem;
 import org.jetbrains.annotations.NotNull;
 
+import java.awt.*;
 import java.util.Random;
 
 public class MMBlockmanErroring {
@@ -35,9 +37,10 @@ public class MMBlockmanErroring {
             song = MMSongs.ROME_REACTION.get();
             SuccessfulPlay = true;
         } else {
+            MMDebugLogging.debugS("Error. Printing Now");
             song = null;
             if (showerrors) {
-                String name = Minecraft.getInstance().getUser().getName();
+                String name = String.valueOf(pl.getName());
                 SuccessfulPlay = false;
                 String ErrorMessage;
                 if (maxs_mixtapes.DebugMode) {
@@ -50,8 +53,8 @@ public class MMBlockmanErroring {
 
                     ErrorMessage = getString(randnum);
                 }
-                if (en instanceof Player _player && !_player.level.isClientSide())
-                    _player.displayClientMessage(Component.literal(ErrorMessage), false);
+                pl.sendSystemMessage(Component.literal(ErrorMessage));
+                MMDebugLogging.debugS("Sent: " + ErrorMessage);
             }
         }
         if (playAudio && SuccessfulPlay) {
@@ -85,7 +88,7 @@ public class MMBlockmanErroring {
             case 9 -> "<Blockman Speaker> Wow this is a secret, good job.";
             case 10 -> "<Blockman Speaker> " + String.valueOf(DebugSlot) + " | " + String.valueOf(MMBlockmanStoreSlots.getSlot(0));
             case 11 -> "<Blockman Speaker> https://www.youtube.com/watch?v=xvFZjo5PgG0";
-            default -> "<Blockman Speaker> This should literally be impossible to see, the mod is broken somehow, report this to M4X4 [ERR CODE: " + randnum + "]";
+            default -> "<Blockman Speaker> This should literally be impossible to see, the mod is broken somehow, report this to M4X4. [ERR CODE: " + randnum + "]";
         };
     }
 }

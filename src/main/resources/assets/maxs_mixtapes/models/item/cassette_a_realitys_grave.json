@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:item/debugtexture"
+    "layer0": "maxs_mixtapes:item/a_realitys_grave"
   }
 }

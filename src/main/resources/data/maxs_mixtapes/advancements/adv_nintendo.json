@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "requirement": {
+    "maxs_mixtapes:cassette_gym": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -23,17 +23,38 @@
             "items": [
               "maxs_mixtapes:cassette_gym"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_oot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_oot"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_steam_gardens": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_steam_gardens"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_anarchy_rainbow": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_anarchy_rainbow"
@@ -43,11 +64,25 @@
       }
     }
   },
+  "requirements": [
+    [
+      "maxs_mixtapes:cassette_gym"
+    ],
+    [
+      "maxs_mixtapes:cassette_oot"
+    ],
+    [
+      "maxs_mixtapes:cassette_steam_gardens"
+    ],
+    [
+      "maxs_mixtapes:cassette_anarchy_rainbow"
+    ]
+  ],
   "rewards": {
     "experience": 0,
     "loot": [
       "maxs_mixtapes:entities/ltntd"
     ]
   },
-  "parent": "maxs_mixtapes:adv_init"
+  "parent": "maxs_mixtapes:adv_blank_slate"
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/monokuma"
+    "layer0": "maxs_mixtapes:item/box_15"
   }
 }

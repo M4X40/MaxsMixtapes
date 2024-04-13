@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/mice_on_venus"
+    "layer0": "maxs_mixtapes:item/mice_on_venus"
   }
 }

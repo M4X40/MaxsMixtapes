@@ -1310,5 +1310,21 @@
         "stream": true
       }
     ]
+  },
+  "cage_mansion": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:cage_mansion_-_stage",
+        "stream": true
+      }
+    ]
+  },
+  "lots": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:land_of_the_sun_official_audio",
+        "stream": true
+      }
+    ]
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/btd5"
+    "layer0": "maxs_mixtapes:item/main_theme_btd5"
   }
 }

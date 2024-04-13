@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "requirement": {
+    "maxs_mixtapes:cassette_doors": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -23,17 +23,38 @@
             "items": [
               "maxs_mixtapes:cassette_doors"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_guiding_light": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_guiding_light"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_here_i_come": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_here_i_come"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_here_i_come_2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_here_i_come_2"
@@ -43,11 +64,25 @@
       }
     }
   },
+  "requirements": [
+    [
+      "maxs_mixtapes:cassette_doors"
+    ],
+    [
+      "maxs_mixtapes:cassette_guiding_light"
+    ],
+    [
+      "maxs_mixtapes:cassette_here_i_come"
+    ],
+    [
+      "maxs_mixtapes:cassette_here_i_come_2"
+    ]
+  ],
   "rewards": {
     "experience": 0,
     "loot": [
       "maxs_mixtapes:entities/ltdoors"
     ]
   },
-  "parent": "maxs_mixtapes:adv_init"
+  "parent": "maxs_mixtapes:adv_blank_slate"
 }

@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "requirement": {
+    "maxs_mixtapes:cassette_death_by_glamor": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -23,27 +23,62 @@
             "items": [
               "maxs_mixtapes:cassette_death_by_glamor"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_hopes_and_dreams": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_hopes_and_dreams"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_toriel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_toriel"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_scarlet_forest": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_scarlet_forest"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_a_cybers_world": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_a_cybers_world"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_undertale": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_undertale"
@@ -53,11 +88,31 @@
       }
     }
   },
+  "requirements": [
+    [
+      "maxs_mixtapes:cassette_death_by_glamor"
+    ],
+    [
+      "maxs_mixtapes:cassette_hopes_and_dreams"
+    ],
+    [
+      "maxs_mixtapes:cassette_toriel"
+    ],
+    [
+      "maxs_mixtapes:cassette_scarlet_forest"
+    ],
+    [
+      "maxs_mixtapes:cassette_a_cybers_world"
+    ],
+    [
+      "maxs_mixtapes:cassette_undertale"
+    ]
+  ],
   "rewards": {
     "experience": 0,
     "loot": [
       "maxs_mixtapes:entities/lttf"
     ]
   },
-  "parent": "maxs_mixtapes:adv_init"
+  "parent": "maxs_mixtapes:adv_blank_slate"
 }

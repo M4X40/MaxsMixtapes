@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "requirement": {
+    "maxs_mixtapes:cassette_simoon": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -23,12 +23,26 @@
             "items": [
               "maxs_mixtapes:cassette_simoon"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_god_race": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_god_race"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_anemoia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_anemoia"
@@ -38,11 +52,22 @@
       }
     }
   },
+  "requirements": [
+    [
+      "maxs_mixtapes:cassette_simoon"
+    ],
+    [
+      "maxs_mixtapes:cassette_god_race"
+    ],
+    [
+      "maxs_mixtapes:cassette_anemoia"
+    ]
+  ],
   "rewards": {
     "experience": 0,
     "loot": [
       "maxs_mixtapes:entities/ltanimated"
     ]
   },
-  "parent": "maxs_mixtapes:adv_init"
+  "parent": "maxs_mixtapes:adv_blank_slate"
 }

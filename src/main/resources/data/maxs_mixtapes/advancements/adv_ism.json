@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "requirement": {
+    "maxs_mixtapes:cassette_rose_mary": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -23,32 +23,74 @@
             "items": [
               "maxs_mixtapes:cassette_rose_mary"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_desmond": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_desmond"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_max": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_max"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_lucas": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_lucas"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_agent_rainbow": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_agent_rainbow"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_virginia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_virginia"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_allen": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_allen"
@@ -58,11 +100,34 @@
       }
     }
   },
+  "requirements": [
+    [
+      "maxs_mixtapes:cassette_rose_mary"
+    ],
+    [
+      "maxs_mixtapes:cassette_desmond"
+    ],
+    [
+      "maxs_mixtapes:cassette_max"
+    ],
+    [
+      "maxs_mixtapes:cassette_lucas"
+    ],
+    [
+      "maxs_mixtapes:cassette_agent_rainbow"
+    ],
+    [
+      "maxs_mixtapes:cassette_virginia"
+    ],
+    [
+      "maxs_mixtapes:cassette_allen"
+    ]
+  ],
   "rewards": {
     "experience": 0,
     "loot": [
       "maxs_mixtapes:entities/mm_ism"
     ]
   },
-  "parent": "maxs_mixtapes:adv_init"
+  "parent": "maxs_mixtapes:adv_blank_slate"
 }

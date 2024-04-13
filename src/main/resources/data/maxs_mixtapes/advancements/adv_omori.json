@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "requirement": {
+    "maxs_mixtapes:cassette_final_duet": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -23,12 +23,26 @@
             "items": [
               "maxs_mixtapes:cassette_final_duet"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_tulips": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_tulips"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_my_time": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_my_time"
@@ -38,11 +52,22 @@
       }
     }
   },
+  "requirements": [
+    [
+      "maxs_mixtapes:cassette_final_duet"
+    ],
+    [
+      "maxs_mixtapes:cassette_tulips"
+    ],
+    [
+      "maxs_mixtapes:cassette_my_time"
+    ]
+  ],
   "rewards": {
     "experience": 0,
     "loot": [
       "maxs_mixtapes:entities/ltomori"
     ]
   },
-  "parent": "maxs_mixtapes:adv_init"
+  "parent": "maxs_mixtapes:adv_blank_slate"
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/scarlet_forest"
+    "layer0": "maxs_mixtapes:item/scarlet_forest"
   }
 }

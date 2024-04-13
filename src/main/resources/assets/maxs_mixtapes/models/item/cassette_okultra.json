@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/love_me_normally_tape"
+    "layer0": "maxs_mixtapes:item/okultra"
   }
 }

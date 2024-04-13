@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/battleblocktheater"
+    "layer0": "maxs_mixtapes:item/battleblocktheater_menu"
   }
 }

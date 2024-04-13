@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/normal_album"
+    "layer0": "maxs_mixtapes:item/well_better_than_the_alternative"
   }
 }

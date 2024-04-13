@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "requirement": {
+    "maxs_mixtapes:cassette_i_dont_wanna_be_free": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -23,17 +23,38 @@
             "items": [
               "maxs_mixtapes:cassette_i_dont_wanna_be_free"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_the_last_goodbye": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_the_last_goodbye"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_dan_tdm": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_dan_tdm"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_science_blaster": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_science_blaster"
@@ -43,11 +64,25 @@
       }
     }
   },
+  "requirements": [
+    [
+      "maxs_mixtapes:cassette_i_dont_wanna_be_free"
+    ],
+    [
+      "maxs_mixtapes:cassette_the_last_goodbye"
+    ],
+    [
+      "maxs_mixtapes:cassette_dan_tdm"
+    ],
+    [
+      "maxs_mixtapes:cassette_science_blaster"
+    ]
+  ],
   "rewards": {
     "experience": 0,
     "loot": [
       "maxs_mixtapes:entities/ltyt"
     ]
   },
-  "parent": "maxs_mixtapes:adv_init"
+  "parent": "maxs_mixtapes:adv_blank_slate"
 }

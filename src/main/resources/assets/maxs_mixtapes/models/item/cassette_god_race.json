@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/reg_ena"
+    "layer0": "maxs_mixtapes:item/god_race"
   }
 }

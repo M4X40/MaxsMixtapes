@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/lucio_speed"
+    "layer0": "maxs_mixtapes:item/we_move_together_as_one"
   }
 }

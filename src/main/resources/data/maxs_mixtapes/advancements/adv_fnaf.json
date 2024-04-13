@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "requirement": {
+    "maxs_mixtapes:cassette_fnaf_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -23,27 +23,62 @@
             "items": [
               "maxs_mixtapes:cassette_fnaf_1"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_eisoptrophobia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_eisoptrophobia"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_always_come_back": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_always_come_back"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_leave_me_behind": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_leave_me_behind"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_djmm": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_djmm"
             ]
-          },
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_roxanne": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": [
               "maxs_mixtapes:cassette_roxanne"
@@ -53,11 +88,31 @@
       }
     }
   },
+  "requirements": [
+    [
+      "maxs_mixtapes:cassette_fnaf_1"
+    ],
+    [
+      "maxs_mixtapes:cassette_eisoptrophobia"
+    ],
+    [
+      "maxs_mixtapes:cassette_always_come_back"
+    ],
+    [
+      "maxs_mixtapes:cassette_leave_me_behind"
+    ],
+    [
+      "maxs_mixtapes:cassette_djmm"
+    ],
+    [
+      "maxs_mixtapes:cassette_roxanne"
+    ]
+  ],
   "rewards": {
     "experience": 0,
     "loot": [
       "maxs_mixtapes:entities/ltfnaf"
     ]
   },
-  "parent": "maxs_mixtapes:adv_init"
+  "parent": "maxs_mixtapes:adv_blank_slate"
 }

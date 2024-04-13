@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/amogus"
+    "layer0": "maxs_mixtapes:item/a_songus_amongus"
   }
 }

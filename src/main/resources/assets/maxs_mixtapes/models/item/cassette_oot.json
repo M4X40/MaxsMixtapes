@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/deku_shield"
+    "layer0": "maxs_mixtapes:item/ocarina_of_time_menu"
   }
 }

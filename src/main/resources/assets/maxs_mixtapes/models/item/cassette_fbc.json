@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/ice_knight"
+    "layer0": "maxs_mixtapes:item/four_brave_champions"
   }
 }

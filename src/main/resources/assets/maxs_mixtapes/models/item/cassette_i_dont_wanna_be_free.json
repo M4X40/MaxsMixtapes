@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/markiplier"
+    "layer0": "maxs_mixtapes:item/i_dont_wanna_be_free"
   }
 }

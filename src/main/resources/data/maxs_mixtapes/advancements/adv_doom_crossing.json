@@ -1,0 +1,58 @@
+{
+  "display": {
+    "icon": {
+      "item": "maxs_mixtapes:cassette_tottfiy"
+    },
+    "title": {
+      "translate": "advancements.mm.adv_acd"
+    },
+    "description": {
+      "translate": "advancements.mm.adv_acd.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "maxs_mixtapes:cassette_tottfiy": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_tottfiy"
+            ]
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_eternal_horizons": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_eternal_horizons"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "maxs_mixtapes:cassette_tottfiy"
+    ],
+    [
+      "maxs_mixtapes:cassette_eternal_horizons"
+    ]
+  ],
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "maxs_mixtapes:entities/ltacd"
+    ]
+  },
+  "parent": "maxs_mixtapes:adv_blank_slate"
+}

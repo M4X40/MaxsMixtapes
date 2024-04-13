@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/toriel"
+    "layer0": "maxs_mixtapes:item/you_can_always_come_home"
   }
 }
