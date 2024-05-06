@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:purple_dye"
+    },
+    {
+      "item": "minecraft:orange_dye"
+    },
+    {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "minecraft:cod"
+    }
+  ],
+  "result": {
+    "item": "maxs_mixtapes:cassette_im_sane",
+    "count": 1
+  }
+}

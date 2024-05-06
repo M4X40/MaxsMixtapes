@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "213",
+    "111",
+    " 1 "
+  ],
+  "key": {
+    "1": {
+      "tag": "minecraft:planks"
+    },
+    "2": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "3": {
+      "item": "minecraft:potion"
+    }
+  },
+  "result": {
+    "item": "maxs_mixtapes:crucifix",
+    "count": 1
+  }
+}

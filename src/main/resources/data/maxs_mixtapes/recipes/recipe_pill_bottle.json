@@ -1,8 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "012",
-    " 4 "
+    "010",
+    " 0 "
   ],
   "key": {
     "0": {
@@ -10,12 +10,6 @@
     },
     "1": {
       "item": "minecraft:glass_bottle"
-    },
-    "2": {
-      "item": "maxs_mixtapes:bull_pill"
-    },
-    "4": {
-      "item": "maxs_mixtapes:bull_pill"
     }
   },
   "result": {

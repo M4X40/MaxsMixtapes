@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "maxs_mixtapes:knob"
+      "item": "maxs_mixtapes:crucifix"
     },
     {
       "item": "minecraft:soul_torch"

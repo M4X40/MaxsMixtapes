@@ -1,23 +1,19 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "012",
-    " 4 "
-  ],
-  "key": {
-    "0": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "minecraft:pink_dye"
     },
-    "1": {
+    {
       "item": "maxs_mixtapes:blank_tape"
     },
-    "2": {
+    {
       "item": "minecraft:spider_eye"
     },
-    "4": {
-      "item": "maxs_mixtapes:stolas_grimoire"
+    {
+      "item":"maxs_mixtapes:normal_pills"
     }
-  },
+  ],
   "result": {
     "item": "maxs_mixtapes:cassette_addict",
     "count": 1

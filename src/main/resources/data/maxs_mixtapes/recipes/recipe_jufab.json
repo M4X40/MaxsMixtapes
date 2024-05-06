@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "maxs_mixtapes:remnant"
+    },
+    {
+      "item": "minecraft:light_blue_dye"
+    },
+    {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    {
+      "item": "minecraft:lime_dye"
+    },
+    {
+      "item": "minecraft:redstone"
+    }
+  ],
+  "result": {
+    "item": "maxs_mixtapes:cassette_jufab",
+    "count": 1
+  }
+}

@@ -58,8 +58,8 @@ public class MMBlockmanScreen extends AbstractContainerScreen<MMBlockmanMenu> {
 		RenderSystem.defaultBlendFunc();
 		RenderSystem.setShaderTexture(0, texture);
 		blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		RenderSystem.setShaderTexture(0, new ResourceLocation("maxs_mixtapes:textures/screens/temp_walkman_2_gui.png"));
-		blit(ms, this.leftPos + -2, this.topPos + 18, 0, 0, 64, 64, 64, 64);
+		RenderSystem.setShaderTexture(0, new ResourceLocation("maxs_mixtapes:textures/screens/blockman.png"));
+		blit(ms, this.leftPos + 3, this.topPos + 20, 0, 0, 64, 64, 64, 64);
 		RenderSystem.disableBlend();
 	}
 

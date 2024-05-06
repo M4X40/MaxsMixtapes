@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "maxs_mixtapes:yeezys"
+    },
+    {
+      "item": "minecraft:light_gray_dye"
+    },
+    {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    {
+      "item": "minecraft:red_dye"
+    }
+  ],
+  "result": {
+    "item": "maxs_mixtapes:cassette_streetlights",
+    "count": 1
+  }
+}

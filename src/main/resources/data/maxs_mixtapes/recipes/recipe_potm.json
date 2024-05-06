@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:ice"
+    },
+    {
+      "item": "minecraft:golden_helmet"
+    },
+    {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    {
+      "item": "minecraft:book"
+    }
+  ],
+  "result": {
+    "item": "maxs_mixtapes:cassette_potm",
+    "count": 1
+  }
+}

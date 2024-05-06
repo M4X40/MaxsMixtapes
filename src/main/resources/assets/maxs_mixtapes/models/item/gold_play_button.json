@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/play_button"
+    "layer0": "maxs_mixtapes:item/gold_play_button"
   }
 }

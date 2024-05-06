@@ -62,6 +62,42 @@
           }
         ]
       }
+    },
+    "maxs_mixtapes:cassette_insane": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_insane"
+            ]
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_loser_baby": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_loser_baby"
+            ]
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_jlmw": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_jlmw"
+            ]
+          }
+        ]
+      }
     }
   },
   "requirements": [
@@ -76,6 +112,15 @@
     ],
     [
       "maxs_mixtapes:cassette_stolas"
+    ],
+    [
+      "maxs_mixtapes:cassette_insane"
+    ],
+    [
+      "maxs_mixtapes:cassette_loser_baby"
+    ],
+    [
+      "maxs_mixtapes:cassette_jlmw"
     ]
   ],
   "rewards": {

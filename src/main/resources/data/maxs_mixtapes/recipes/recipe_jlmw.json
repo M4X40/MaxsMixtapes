@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "maxs_mixtapes:evil_airpod"
+    },
+    {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    {
+      "item": "minecraft:feather"
+    },
+    {
+      "item": "maxs_mixtapes:stolas_grimoire"
+    }
+  ],
+  "result": {
+    "item": "maxs_mixtapes:cassette_jlmw",
+    "count": 1
+  }
+}

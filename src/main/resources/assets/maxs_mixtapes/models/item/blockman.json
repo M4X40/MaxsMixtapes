@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/temp_walkman_2"
+    "layer0": "maxs_mixtapes:item/blockman"
   }
 }

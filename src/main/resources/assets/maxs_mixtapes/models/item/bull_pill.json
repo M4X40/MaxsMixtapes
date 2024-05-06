@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/bull_pill_better"
+    "layer0": "maxs_mixtapes:item/bull_pill"
   }
 }

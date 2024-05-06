@@ -50,6 +50,18 @@
           }
         ]
       }
+    },
+    "maxs_mixtapes:cassette_streetlights": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_streetlights"
+            ]
+          }
+        ]
+      }
     }
   },
   "requirements": [
@@ -61,6 +73,9 @@
     ],
     [
       "maxs_mixtapes:cassette_good_morning"
+    ],
+    [
+      "maxs_mixtapes:cassette_streetlights"
     ]
   ],
   "rewards": {

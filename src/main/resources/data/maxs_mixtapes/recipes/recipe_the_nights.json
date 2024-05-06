@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bell"
+    },
+    {
+      "item": "minecraft:black_dye"
+    },
+    {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    {
+      "item": "minecraft:white_dye"
+    },
+    {
+      "item": "cobblestone"
+    }
+  ],
+  "result": {
+    "item": "maxs_mixtapes:cassette_the_nights",
+    "count": 1
+  }
+}

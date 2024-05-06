@@ -23,7 +23,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MMBlockmanPlay {
-
     private static Boolean shouldWait = false;
     private static int tickCounter = 0;
     public static List<Object> params = new ArrayList<Object>();

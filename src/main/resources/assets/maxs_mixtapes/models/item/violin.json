@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/violin"
+    "layer0": "maxs_mixtapes:item/violin"
   }
 }

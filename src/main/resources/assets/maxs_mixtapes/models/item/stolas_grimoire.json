@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/grimoire_stolas"
+    "layer0": "maxs_mixtapes:item/stolas_grimoire"
   }
 }

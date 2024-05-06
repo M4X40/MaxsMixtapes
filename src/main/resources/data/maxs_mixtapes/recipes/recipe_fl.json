@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:blue_dye"
+    },
+    {
+      "item": "minecraft:chest"
+    },
+    {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    {
+      "item": "minecraft:brimstone"
+    }
+  ],
+  "result": {
+    "item": "maxs_mixtapes:cassette_fl",
+    "count": 1
+  }
+}

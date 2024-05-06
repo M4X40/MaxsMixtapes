@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:purple_dye"
+    },
+    {
+      "item": "minecraft:green_dye"
+    },
+    {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "item": "maxs_mixtapes:remnant"
+    }
+  ],
+  "result": {
+    "item": "maxs_mixtapes:cassette_terrible_things",
+    "count": 1
+  }
+}

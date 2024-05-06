@@ -86,6 +86,90 @@
           }
         ]
       }
+    },
+    "maxs_mixtapes:cassette_fnaf": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_fnaf"
+            ]
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_fmn": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_fmn"
+            ]
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_jufab": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_jufab"
+            ]
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_golf_swamp": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_golf_swamp"
+            ]
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_ych": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_ych"
+            ]
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_tiys": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_tiys"
+            ]
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_terrible_things": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_terrible_things"
+            ]
+          }
+        ]
+      }
     }
   },
   "requirements": [
@@ -103,6 +187,27 @@
     ],
     [
       "maxs_mixtapes:cassette_djmm"
+    ],
+    [
+      "maxs_mixtapes:cassette_fnaf"
+    ],
+    [
+      "maxs_mixtapes:cassette_fmn"
+    ],
+    [
+      "maxs_mixtapes:cassette_jufab"
+    ],
+    [
+      "maxs_mixtapes:cassette_golf_swamp"
+    ],
+    [
+      "maxs_mixtapes:cassette_ych"
+    ],
+    [
+      "maxs_mixtapes:cassette_tiys"
+    ],
+    [
+      "maxs_mixtapes:cassette_terrible_things"
     ],
     [
       "maxs_mixtapes:cassette_roxanne"

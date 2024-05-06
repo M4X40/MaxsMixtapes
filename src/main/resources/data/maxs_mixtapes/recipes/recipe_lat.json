@@ -1,27 +1,22 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    " 1 ",
-    "345",
-    " 7 "
-  ],
-  "key": {
-    "1": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "minecraft:flint_and_steel"
     },
-    "3": {
+    {
       "item": "minecraft:white_dye"
     },
-    "4": {
+    {
       "item": "maxs_mixtapes:blank_tape"
     },
-    "5": {
+    {
       "item": "minecraft:light_blue_dye"
     },
-    "7": {
+    {
       "item": "maxs_mixtapes:stolas_grimoire"
     }
-  },
+  ],
   "result": {
     "item": "maxs_mixtapes:cassette_look_at_this",
     "count": 1

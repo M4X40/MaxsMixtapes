@@ -1326,5 +1326,37 @@
         "stream": true
       }
     ]
+  },
+  "streetlights": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:street_lights",
+        "stream": true
+      }
+    ]
+  },
+  "the_nights": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:the_nights",
+        "stream": true
+      }
+    ]
+  },
+  "gh1999": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:femtanyl_-_girl_hell_1999",
+        "stream": true
+      }
+    ]
+  },
+  "evil_airpod": {
+    "sounds": [
+      {
+        "name": "maxs_mixtapes:evilkd",
+        "stream": true
+      }
+    ]
   }
 }

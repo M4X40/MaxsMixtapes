@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "minecraft:redstone_lamp"
+    },
+    {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    {
+      "tag": "minecraft:wool_carpets"
+    }
+  ],
+  "result": {
+    "item": "maxs_mixtapes:cassette_rfyl",
+    "count": 1
+  }
+}

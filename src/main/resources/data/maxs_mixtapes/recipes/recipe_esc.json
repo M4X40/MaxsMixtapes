@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:gold_nugget"
+    },
+    {
+      "item": "minecraft:rabbit_foot"
+    },
+    {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    {
+      "item": "minecraft:brimstone"
+    }
+  ],
+  "result": {
+    "item": "maxs_mixtapes:cassette_esc",
+    "count": 1
+  }
+}

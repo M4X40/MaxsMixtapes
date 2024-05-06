@@ -180,6 +180,10 @@ public class MMSongs {
     public static final RegistryObject<SoundEvent> MBIL = registerSoundEvent("mbil");
     public static final RegistryObject<SoundEvent> CAGE_MANSION = registerSoundEvent("cage_mansion");
     public static final RegistryObject<SoundEvent> LOTS = registerSoundEvent("lots");
+    public static final RegistryObject<SoundEvent> STREETLIGHTS = registerSoundEvent("streetlights");
+    public static final RegistryObject<SoundEvent> THE_NIGHTS = registerSoundEvent("the_nights");
+    public static final RegistryObject<SoundEvent> GH1999 = registerSoundEvent("gh1999");
+    public static final RegistryObject<SoundEvent> EVIL_AIRPOD = registerSoundEvent("evil_airpod");
 
     public static final RegistryObject<SoundEvent> ROME_REACTION = registerSoundEvent("rome_reaction");
     // Add Registry above

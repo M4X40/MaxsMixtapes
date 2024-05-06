@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "maxs_mixtapes:olditem/agent_rainbow"
+    "layer0": "maxs_mixtapes:item/agent_rainbow"
   }
 }

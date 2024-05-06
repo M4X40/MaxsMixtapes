@@ -1,0 +1,73 @@
+{
+  "display": {
+    "icon": {
+      "item": "maxs_mixtapes:cassette_awibfy"
+    },
+    "title": {
+      "translate": "advancements.mm.adv_unfiction"
+    },
+    "description": {
+      "translate": "advancements.mm.adv_unfiction.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "maxs_mixtapes:cassette_awibfy": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_awibfy"
+            ]
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_mbil": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_mbil"
+            ]
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_cats_on_mars": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_cats_on_mars"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "maxs_mixtapes:cassette_awibfy"
+    ],
+    [
+      "maxs_mixtapes:cassette_mbil"
+    ],
+    [
+      "maxs_mixtapes:cassette_cats_on_mars"
+    ]
+  ],
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "maxs_mixtapes:entities/ltunfiction"
+    ]
+  },
+  "parent": "maxs_mixtapes:adv_blank_slate"
+}

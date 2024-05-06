@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cobweb"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    {
+      "item": "minecraft:brimstone"
+    }
+  ],
+  "result": {
+    "item": "maxs_mixtapes:cassette_rod",
+    "count": 1
+  }
+}

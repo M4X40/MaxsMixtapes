@@ -1,6 +1,6 @@
 {
   "display": {
-    "background": "minecraft:textures/block/stone.png",
+    "background": "maxs_mixtapes:textures/screens/sculk.png",
     "icon": {
       "item": "maxs_mixtapes:blockman"
     },
