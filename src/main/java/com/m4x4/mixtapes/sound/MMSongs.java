@@ -9,8 +9,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class MMSongs {
-    public static final DeferredRegister<SoundEvent> SOUND_EVENTS =
-            DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, maxs_mixtapes.MODID);
+    public static final DeferredRegister<SoundEvent> SOUND_EVENTS = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, maxs_mixtapes.MODID);
     public static final RegistryObject<SoundEvent> HCAS = registerSoundEvent("hcas");
     public static final RegistryObject<SoundEvent> DOLL_HOUSE = registerSoundEvent("doll_house");
     public static final RegistryObject<SoundEvent> BOTP = registerSoundEvent("botp");
