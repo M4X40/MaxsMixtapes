@@ -42,7 +42,7 @@ authors="M4X4, Thurman Okami" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-159 cassette tapes with unique songs, sprites, and crafting!
+166 cassette tapes with unique songs, sprites, and crafting!
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 #[[dependencies.examplemod]] #optional
