@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "maxs_mixtapes:empty_gun"
+      "item": "minecraft:white_dye"
     },
     {
       "item": "maxs_mixtapes:blank_tape"
     },
     {
-      "item": "minecraft:flint_and_steel"
+      "item": "minecraft:black_dye"
     },
     {
-      "tag": "minecraft:saplings"
+      "item": "minecraft:redstone_block"
     }
   ],
   "result": {

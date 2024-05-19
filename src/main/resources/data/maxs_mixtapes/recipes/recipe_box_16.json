@@ -1,11 +1,13 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "maxs_mixtapes:cassette_box_15"
-  },
-  "addition": {
-    "item": "minecraft:iron_sword"
-  },
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "maxs_mixtapes:cassette_box_15"
+    },
+    {
+      "item": "minecraft:iron_sword"
+    }
+  ],
   "result": {
     "item": "maxs_mixtapes:cassette_box_16"
   }

@@ -2,23 +2,23 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "minecraft:planks"
+      "item": "minecraft:white_dye"
     },
     {
-      "item": "minecraft:flint_and_steel"
+      "item": "minecraft:red_dye"
     },
     {
       "item": "maxs_mixtapes:blank_tape"
     },
     {
-      "item": "maxs_mixtapes:brimstone"
+      "item": "minecraft:water_bucket"
     },
     {
-      "item": "minecraft:terracotta"
+      "item": "maxs_mixtapes:floppy_disk"
     }
   ],
   "result": {
-    "item": "maxs_mixtapes:cassette_ig",
+    "item": "maxs_mixtapes:cassette_cats_on_mars",
     "count": 1
   }
 }

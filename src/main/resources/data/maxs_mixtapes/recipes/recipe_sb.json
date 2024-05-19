@@ -2,8 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "012",
-    "345",
-    "678"
+    "131",
+    "456"
   ],
   "key": {
     "0": {
@@ -16,21 +16,15 @@
       "item": "minecraft:red_dye"
     },
     "3": {
-      "item": "minecraft:gold_ingot"
-    },
-    "4": {
       "item": "maxs_mixtapes:blank_tape"
     },
-    "5": {
-      "item": "minecraft:gold_ingot"
-    },
-    "6": {
+    "4": {
       "item": "minecraft:yellow_dye"
     },
-    "7": {
+    "5": {
       "item": "maxs_mixtapes:gold_play_button"
     },
-    "8": {
+    "6": {
       "item": "minecraft:blue_dye"
     }
   },

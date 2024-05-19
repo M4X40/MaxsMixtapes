@@ -2,23 +2,23 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "maxs_mixtapes:empty_gun"
+      "item": "minecraft:red_wool"
     },
     {
       "item": "maxs_mixtapes:blank_tape"
     },
     {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:purple_dye"
     },
     {
-      "item": "minecraft:redstone"
+      "item": "minecraft:red_dye"
     },
     {
-      "item": "minecraft:fire_charge"
+      "item": "minecraft:rabbit_foot"
     }
   ],
   "result": {
-    "item": "maxs_mixtapes:cassette_guns_blazing",
+    "item": "maxs_mixtapes:cassette_make_me_famous",
     "count": 1
   }
 }

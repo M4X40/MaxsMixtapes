@@ -2,20 +2,20 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "maxs_mixtapes:empty_gun"
+      "item": "minecraft:redstone_lamp"
     },
     {
       "item": "maxs_mixtapes:blank_tape"
     },
     {
-      "item": "minecraft:lead"
+      "item": "maxs_mixtapes:empty_gun"
     },
     {
-      "item": "minecraft:leather"
+      "item": "maxs_mixtapes:evil_airpod"
     }
   ],
   "result": {
-    "item": "maxs_mixtapes:cassette_showdown",
+    "item": "maxs_mixtapes:cassette_lots",
     "count": 1
   }
 }

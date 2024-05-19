@@ -8,14 +8,14 @@
       "item": "maxs_mixtapes:blank_tape"
     },
     {
-      "item": "minecraft:lead"
+      "item": "minecraft:sweet_berries"
     },
     {
-      "item": "minecraft:leather"
+      "item": "minecraft:redstone"
     }
   ],
   "result": {
-    "item": "maxs_mixtapes:cassette_showdown",
+    "item": "maxs_mixtapes:cassette_too_close",
     "count": 1
   }
 }

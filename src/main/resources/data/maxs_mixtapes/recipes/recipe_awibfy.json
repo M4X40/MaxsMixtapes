@@ -2,23 +2,23 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "minecraft:planks"
+      "item": "minecraft:pink_dye"
     },
     {
-      "item": "minecraft:flint_and_steel"
+      "item": "minecraft:light_blue_dye"
     },
     {
       "item": "maxs_mixtapes:blank_tape"
     },
     {
-      "item": "maxs_mixtapes:brimstone"
+      "item": "minecraft:axolotl_bucket"
     },
     {
-      "item": "minecraft:terracotta"
+      "item": "maxs_mixtapes:floppy_disk"
     }
   ],
   "result": {
-    "item": "maxs_mixtapes:cassette_ig",
+    "item": "maxs_mixtapes:cassette_awibfy",
     "count": 1
   }
 }

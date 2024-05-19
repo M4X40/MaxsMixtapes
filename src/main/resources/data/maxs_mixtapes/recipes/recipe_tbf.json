@@ -12,10 +12,13 @@
     },
     {
       "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "minecraft:sweet_berries"
     }
   ],
   "result": {
-    "item": "maxs_mixtapes:cassette_mothers_love",
+    "item": "maxs_mixtapes:cassette_trial_by_fury",
     "count": 1
   }
 }

@@ -1,0 +1,73 @@
+{
+  "display": {
+    "icon": {
+      "item": "maxs_mixtapes:cassette_1thot_2thot"
+    },
+    "title": {
+      "translate": "advancements.mm.adv_gravy"
+    },
+    "description": {
+      "translate": "advancements.mm.adv_gravy.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "maxs_mixtapes:cassette_1thot_2thot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_1thot_2thot"
+            ]
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_betty": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_betty"
+            ]
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_cest_la_vie": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_cest_la_vie"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "maxs_mixtapes:cassette_betty"
+    ],
+    [
+      "maxs_mixtapes:cassette_1thot_2thot"
+    ],
+    [
+      "maxs_mixtapes:cassette_cest_la_vie"
+    ]
+  ],
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "maxs_mixtapes:entities/ltgravy"
+    ]
+  },
+  "parent": "maxs_mixtapes:adv_blank_slate"
+}

@@ -2,20 +2,23 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "maxs_mixtapes:empty_gun"
+      "item": "minecraft:green_dye"
+    },
+    {
+      "item": "minecraft:shield"
     },
     {
       "item": "maxs_mixtapes:blank_tape"
     },
     {
-      "item": "minecraft:flint_and_steel"
+      "item": "minecraft:iron_sword"
     },
     {
       "item": "minecraft:sweet_berries"
     }
   ],
   "result": {
-    "item": "maxs_mixtapes:cassette_mothers_love",
+    "item": "maxs_mixtapes:cassette_sunset_breakfast",
     "count": 1
   }
 }

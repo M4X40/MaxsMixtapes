@@ -2,20 +2,20 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "maxs_mixtapes:empty_gun"
+      "tag": "minecraft:beds"
     },
     {
       "item": "maxs_mixtapes:blank_tape"
     },
     {
-      "item": "minecraft:lead"
+      "item": "minecraft:redstone_lamp"
     },
     {
-      "item": "minecraft:leather"
+      "item": "maxs_mixtapes:floppy_disk"
     }
   ],
   "result": {
-    "item": "maxs_mixtapes:cassette_showdown",
+    "item": "maxs_mixtapes:cassette_mbil",
     "count": 1
   }
 }

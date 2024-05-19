@@ -2,23 +2,23 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "maxs_mixtapes:empty_gun"
+      "item": "minecraft:red_dye"
     },
     {
       "item": "maxs_mixtapes:blank_tape"
     },
     {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:redstone_block"
     },
     {
-      "item": "minecraft:redstone"
+      "item": "minecraft:iron_sword"
     },
     {
-      "item": "minecraft:fire_charge"
+      "item": "minecraft:gray_dye"
     }
   ],
   "result": {
-    "item": "maxs_mixtapes:cassette_guns_blazing",
+    "item": "maxs_mixtapes:cassette_gh1999",
     "count": 1
   }
 }

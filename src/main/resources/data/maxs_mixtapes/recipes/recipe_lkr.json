@@ -2,20 +2,20 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "maxs_mixtapes:empty_gun"
+      "item": "minecraft:bone"
     },
     {
       "item": "maxs_mixtapes:blank_tape"
     },
     {
-      "item": "minecraft:lead"
+      "item": "minecraft:light_blue_dye"
     },
     {
-      "item": "minecraft:leather"
+      "item": "minecraft:sugar"
     }
   ],
   "result": {
-    "item": "maxs_mixtapes:cassette_showdown",
+    "item": "maxs_mixtapes:cassette_lkr",
     "count": 1
   }
 }

@@ -1,11 +1,13 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "minecraft:music_disc_pigstep"
-  },
-  "addition": {
-    "item": "minecraft:gold_block"
-  },
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:music_disc_pigstep"
+    },
+    {
+      "item": "minecraft:gold_block"
+    }
+  ],
   "result": {
     "item": "maxs_mixtapes:cassette_pigstep_jazz"
   }

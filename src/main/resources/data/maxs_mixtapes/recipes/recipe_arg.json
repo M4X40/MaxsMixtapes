@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:pink_dye"
+    },
+    {
+      "item": "minecraft:light_blue_dye"
+    },
+    {
+      "item": "maxs_mixtapes:blank_tape"
+    },
+    {
+      "item": "minecraft:axolotl_bucket"
+    },
+    {
+      "item": "maxs_mixtapes:floppy_disk"
+    }
+  ],
+  "result": {
+    "item": "maxs_mixtapes:cassette_a_realitys_grave",
+    "count": 1
+  }
+}

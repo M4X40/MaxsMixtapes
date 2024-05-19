@@ -1,0 +1,118 @@
+{
+  "display": {
+    "icon": {
+      "item": "maxs_mixtapes:cassette_mothers_love"
+    },
+    "title": {
+      "translate": "advancements.mm.adv_uty"
+    },
+    "description": {
+      "translate": "advancements.mm.adv_uty.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "maxs_mixtapes:cassette_mothers_love": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_mothers_love"
+            ]
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_showdown": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_showdown"
+            ]
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_guns_blazing": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_guns_blazing"
+            ]
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_afterlife": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_afterlife"
+            ]
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_trial_by_fury": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_trial_by_fury"
+            ]
+          }
+        ]
+      }
+    },
+    "maxs_mixtapes:cassette_too_close": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maxs_mixtapes:cassette_too_close"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "maxs_mixtapes:cassette_mothers_love"
+    ],
+    [
+      "maxs_mixtapes:cassette_showdown"
+    ],
+    [
+      "maxs_mixtapes:cassette_guns_blazing"
+    ],
+    [
+      "maxs_mixtapes:cassette_too_close"
+    ],
+    [
+      "maxs_mixtapes:cassette_trial_by_fury"
+    ],
+    [
+      "maxs_mixtapes:cassette_afterlife"
+    ]
+  ],
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "maxs_mixtapes:entities/ltuty"
+    ]
+  },
+  "parent": "maxs_mixtapes:adv_blank_slate"
+}

@@ -2,20 +2,20 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraft:gold_nugget"
+      "item": "minecraft:iron_ingot"
     },
     {
-      "item": "minecraft:rabbit_foot"
+      "item": "minecraft:black_stained_glass_pane"
     },
     {
       "item": "maxs_mixtapes:blank_tape"
     },
     {
-      "item": "maxs_mixtapes:brimstone"
+      "item": "minecraft:leather_leggings"
     }
   ],
   "result": {
-    "item": "maxs_mixtapes:cassette_esc",
+    "item": "maxs_mixtapes:cassette_cage_mansion",
     "count": 1
   }
 }
