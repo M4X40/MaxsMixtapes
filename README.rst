@@ -16,7 +16,7 @@ CREDITS
 
 Programming / Testing | `M4X4 <https://github.com/M4X40/>`_
 
-Spritework | `baligaman`
+Spritework | `Thurman Okami (baligaman)`
 
 
 NEWS
